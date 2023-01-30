@@ -1,0 +1,166 @@
+.headerFixed {
+    z-index: 99;
+    & .header {
+        
+        & .navbar {
+            height: 52px;
+            & .navInner {
+                width: 100%;
+                & .logo {
+                    width: 46px;
+                    // height: 46px;
+                    & .logoImg {
+                        // aspect-ratio: 10/10;
+                        object-fit: contain;
+                        object-position: top center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner {
+    height: 550px;
+    
+    & .bannerImg {
+        background-image: url('../img/bg/banner.jpg');
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-size: cover;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom right, #b49c9c, #1c1c1c);
+            opacity: 0.6;
+        }
+    }
+    
+
+    & .bannerInner {
+        & .bannerHeading {
+            font-size: 36px;
+            font-weight: 600;
+        }
+        & .bannerPara {
+            font-size: 14px;
+            font-weight: 400;
+            
+        }
+        & .bannerForm {
+            & .formHeading {
+                font-size: 16px;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+
+            & .searchControl {
+                padding-left: 34px;
+            }
+
+            & .searchButton {
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+                left: 14px;
+                width: 14px;
+                height: 14px;
+                display: flex;
+                align-items: center;
+                padding: 0;
+                
+                & .searchIcon {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    aspect-ratio: 10/10;
+                }
+            }
+        }
+    }
+}
+
+.service {
+    & .owl-stage { 
+        padding-top: 40px;
+        & .item {
+            padding: 20px;
+            & .serviceItems {
+                & .serviceItem {
+                    transition: 0.3s all cubic-bezier(0.25, 0.1, 0.41, 2.4);
+                    width: 100px;
+                    height: 100px;
+                    background: #680303;
+                    border-radius: 100%;
+                    border: 7px solid #ff5b5b;
+                    padding: 15px;
+            
+                    & .serviceImg {
+                        aspect-ratio: 10/10;
+                        object-fit: cover;
+                        position: top center;
+                    }
+                }
+            }
+            &:hover {
+                & .serviceItem{
+                    transform: scale(1.05);
+                }
+            }
+            
+        }
+    }
+
+    & .owl-nav {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        transform: translate(0%, 50%);
+        display: flex !important;
+        column-gap: 5px;
+
+        & .owl-prev{
+            & .previous {
+                border: 3px solid;
+                padding: 5px;
+                border-radius: 7px;
+                border-color:$theme1 $theme2 $theme1 $theme2;
+            }
+            &.disabled  {
+                & .previous {
+                    border: 3px solid;
+                    padding: 5px;
+                    border-radius: 7px;
+                    border-color:lighten($theme1, 55) lighten($theme2, 55) lighten($theme1, 55) lighten($theme2, 55) ;
+                }
+            }
+            
+        }
+        & .owl-next{
+            & .next {
+                border: 3px solid;
+                padding: 5px;
+                border-radius: 7px;
+                border-color:$theme1 $theme2 $theme1 $theme2 ;
+            }
+            &.disabled  {
+                & .next {
+                    border: 3px solid;
+                    padding: 5px;
+                    border-radius: 7px;
+                    border-color: lighten($theme1, 55) lighten($theme2, 55) lighten($theme1, 55) lighten($theme2, 55);
+                }
+            }
+            
+        }
+    }
+    
+}
