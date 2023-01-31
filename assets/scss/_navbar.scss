@@ -1,0 +1,25 @@
+.headerFixed {
+    &.contentFixed {
+        background-color: $theme2;
+        border: 1px solid $white;
+    }
+    z-index: 99;
+    & .header {
+        
+        & .navbar {
+            height: 52px;
+            & .navInner {
+                width: 100%;
+                & .logo {
+                    width: 46px;
+                    // height: 46px;
+                    & .logoImg {
+                        // aspect-ratio: 10/10;
+                        object-fit: contain;
+                        object-position: top center;
+                    }
+                }
+            }
+        }
+    }
+}

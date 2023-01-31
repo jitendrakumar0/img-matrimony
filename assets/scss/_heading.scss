@@ -1,0 +1,25 @@
+.sectionHeading {
+    line-height: 1.2;
+    & .mainHeading {
+        font-weight: 600;
+        text-transform: capitalize;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 35px;
+    }
+    & .subheading {
+        font-size: 16px;
+        font-weight: 400;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    
+}
+

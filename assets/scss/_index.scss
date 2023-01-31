@@ -1,24 +1,4 @@
-.headerFixed {
-    z-index: 99;
-    & .header {
-        
-        & .navbar {
-            height: 52px;
-            & .navInner {
-                width: 100%;
-                & .logo {
-                    width: 46px;
-                    // height: 46px;
-                    & .logoImg {
-                        // aspect-ratio: 10/10;
-                        object-fit: contain;
-                        object-position: top center;
-                    }
-                }
-            }
-        }
-    }
-}
+
 
 .banner {
     height: 550px;
@@ -90,12 +70,12 @@
 
 .service {
     & .owl-stage { 
-        padding-top: 40px;
+        // padding-top: 40px;
         & .item {
-            padding: 20px;
+            padding: 10px;
             & .serviceItems {
+                transition: 0.3s all cubic-bezier(0.25, 0.1, 0.41, 2.4);
                 & .serviceItem {
-                    transition: 0.3s all cubic-bezier(0.25, 0.1, 0.41, 2.4);
                     width: 100px;
                     height: 100px;
                     background: #680303;
@@ -111,7 +91,7 @@
                 }
             }
             &:hover {
-                & .serviceItem{
+                & .serviceItems{
                     transform: scale(1.05);
                 }
             }
@@ -121,46 +101,208 @@
 
     & .owl-nav {
         position: absolute;
-        top: 0px;
+        top: -86px;
         right: 0;
         transform: translate(0%, 50%);
         display: flex !important;
         column-gap: 5px;
 
         & .owl-prev{
-            & .previous {
-                border: 3px solid;
-                padding: 5px;
-                border-radius: 7px;
-                border-color:$theme1 $theme2 $theme1 $theme2;
-            }
+            width: 31px;
+            height: 31px;
+            display: flex;
+            padding: 5px !important;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            border: 3px solid !important;
+            border-color:$theme1 $theme2 $theme1 $theme2 !important;
             &.disabled  {
-                & .previous {
-                    border: 3px solid;
-                    padding: 5px;
-                    border-radius: 7px;
-                    border-color:lighten($theme1, 55) lighten($theme2, 55) lighten($theme1, 55) lighten($theme2, 55) ;
-                }
+            border: 3px solid;
+                border-color:lighten($theme1, 55) lighten($theme2, 55) lighten($theme1, 55) lighten($theme2, 55) !important;
             }
             
         }
         & .owl-next{
-            & .next {
-                border: 3px solid;
-                padding: 5px;
-                border-radius: 7px;
-                border-color:$theme1 $theme2 $theme1 $theme2 ;
-            }
+            width: 31px;
+            height: 31px;
+            display: flex;
+            justify-content: center;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            border: 3px solid !important;
+            padding: 5px !important;
+            border-color:$theme1 $theme2 $theme1 $theme2 !important;
             &.disabled  {
-                & .next {
-                    border: 3px solid;
-                    padding: 5px;
-                    border-radius: 7px;
-                    border-color: lighten($theme1, 55) lighten($theme2, 55) lighten($theme1, 55) lighten($theme2, 55);
-                }
+                border: 3px solid;
+                border-color: lighten($theme1, 55) lighten($theme2, 55) lighten($theme1, 55) lighten($theme2, 55) !important;
             }
             
         }
     }
+
+    & .owl-dots {
+        display: none;
+    }
     
 }
+
+.storySection {
+    & .storysectionItem {
+        box-sizing: border-box;
+        & .storySectionImg {
+            &:hover {
+                & .storyDate {
+                    transform: rotate(0deg);
+                    top: 12px;
+                    left: 12px;
+                }
+            }
+        }
+        & .storyDate {
+            position: absolute;
+            top: 28px;
+            left: 19px;
+            background:  $theme2;
+            border-radius: 6px;
+            padding: 4px 10px;
+            font-size: 14px;
+            font-weight: 600;
+            color:$white;
+            transition:0.9s all ;
+            transform: rotate(340deg);
+        }
+
+        & .storyPara {
+            font-size: 14px;
+        }
+        & .storySocialiConnection {
+            width: 15px;
+            height: 15px;
+            display: block;
+            position: relative;
+            transition: all 0.5s;
+            & img {
+                object-fit: cover;
+                aspect-ratio: 10/10;
+                position: absolute;
+            }
+            &:hover{
+                transform: scale(0.85);
+            }
+        }
+    }
+}
+
+.bgTestimonial  {
+    // background-color: rgb(red, green, blue);
+    background: url('../img/bg/dottedBgImage.svg');
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    
+    & .testimonial {
+        & .testimonialHeading {
+            & .subHeading {
+                font-size: 16px;
+                font-weight: 700;
+                color: $theme1;
+    
+            }
+            & .maiHeading {
+                font-weight: 600;
+                text-transform: capitalize;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 35px;
+            }
+            & .testimonialPara {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+        & .testimonialItem {
+            position: relative;
+            & .testimonialItemImg {
+                width: 400px;
+                height: 100%;
+                border-radius: 10px;
+            
+                // position: relative;
+            }
+            & .testimonialItemContent {
+                position: absolute;    top: 50%;
+                right: 0;
+                width: 508px;
+                background-color: $white;
+                border-left: 5px solid $theme2;
+                transform: translate(0,-50%);
+    
+                & .testimonialClientWords {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+    
+                & .testimonialClientName {
+                    font-size: 14px;
+                    font-weight: 600;
+    
+                }
+            }
+        }
+    
+        & .owl-nav {
+            position: absolute;
+            bottom: 19px;
+            left: -436px;
+            transform: translate(0%, 50%);
+            display: flex !important;
+            column-gap: 5px;
+    
+            & .owl-prev{
+                width: 31px;
+                height: 31px;
+                display: flex;
+                padding: 5px !important;
+                justify-content: center;
+                align-items: center;
+                border-radius: 12px;
+                border: 3px solid !important;
+                border-color:$theme1 $theme2 $theme1 $theme2 !important;
+                &.disabled  {
+                border: 3px solid;
+                    border-color:lighten($theme1, 55) lighten($theme2, 55) lighten($theme1, 55) lighten($theme2, 55) !important;
+                }
+                
+            }
+            & .owl-next{
+                width: 31px;
+                height: 31px;
+                display: flex;
+                justify-content: center;
+                justify-content: center;
+                align-items: center;
+                border-radius: 12px;
+                border: 3px solid !important;
+                padding: 5px !important;
+                border-color:$theme1 $theme2 $theme1 $theme2 !important;
+                &.disabled  {
+                    border: 3px solid;
+                    border-color: lighten($theme1, 55) lighten($theme2, 55) lighten($theme1, 55) lighten($theme2, 55) !important;
+                }
+                
+            }
+        }
+    
+        & .owl-dots {
+            display: none;
+        }
+    }
+}
+

@@ -2,7 +2,7 @@
     border-radius: 50px;
     color: $theme1 !important;
     font-size: 12px;
-    height: 40px;
+    height: 36px;
     padding: 0.375rem 0.75rem;
 
     &::placeholder {
@@ -16,10 +16,15 @@
     }
 
     &:focus-visible {
-        outline-offset: none;
-        
+        outline-offset: none; 
     }
-    
+}
 
-    
+.input-group-text {
+    border-radius: 50px 50px 50px 50px;
+    color: $white !important;
+    background-color: $theme2 !important;
+    font-size: 12px;
+    cursor: pointer;
+    // border-color: $theme2 !important;
 }
