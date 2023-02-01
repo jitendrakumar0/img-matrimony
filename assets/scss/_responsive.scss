@@ -52,17 +52,22 @@
 @media (max-width: 991.98px) {
   // @include navbar-mixin-max-md();
   // @include heading-fs-12-mixin-max-md();
+  @include button-mixin-max-md();
+  @include testimonial-mixin-max-md();
+
 }
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
-  // @include navbar-mixin-max-sm();
+  @include service-mixin-max-sm();
   // @include heading-fs-12-mixin-max-sm();
 }
 
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-  // @include navbar-mixin-max-xs();
+  @include service-mixin-max-xs();
+  @include heading-mixin-max-xs();
+
   // @include heading-fs-12-mixin-max-xs();
 }
 

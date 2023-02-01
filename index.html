@@ -244,9 +244,9 @@
                         </div>
                         <div class="col-12  bgTestimonial bg-light py-5">
                             <div class="container">
-                                <div class="testimonial py-5">
-                                    <div class="row">
-                                        <div class="col-md-4 col-sm-12 col-auto">
+                                <div class="testimonial py-0 py-sm-5">
+                                    <div class="row gy-3">
+                                        <div class="col-md-5 col-sm-12 col-lg-4 col-auto">
                                             <div class="testimonialHeading">
                                                 <div class="row">
                                                     <div class="col-md-12">
@@ -267,7 +267,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-8 col-sm-12">
+                                        <div class="col-md-7 col-sm-12 col-lg-8">
                                             <div class="owl-carousel owl-theme testimonialCarousel">
                                                 <div class="item">
                                                     <div class="testimonialItem">
@@ -337,7 +337,7 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="row gy-3">
-                                                <div class="col-md-2 col-lg-4 col-xl-3">
+                                                <div class="col-md-6 col-sm-6 col-12 col-lg-3 col-xl-3">
                                                     <div class="storysectionItem bg-white rounded-4 shadow p-4">
                                                         <div class="row gy-2">
                                                             <div class="col-md-12">
@@ -352,7 +352,7 @@
                                                             </div>
                                                             <div class="col-md-12">
                                                                 <div class="storyClientName text-theme1 fw-bold">
-                                                                    Preetam  & Pallavi
+                                                                    Payal & Ajay
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-12">
@@ -386,7 +386,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-2 col-lg-4 col-xl-3">
+                                                <div class="col-md-6 col-sm-6 col-12 col-lg-3 col-xl-3">
                                                     <div class="storysectionItem bg-white rounded-4 shadow p-4">
                                                         <div class="row gy-2">
                                                             <div class="col-md-12">
@@ -401,7 +401,7 @@
                                                             </div>
                                                             <div class="col-md-12">
                                                                 <div class="storyClientName text-theme1 fw-bold">
-                                                                    Preetam  & Pallavi
+                                                                    Payal & Ajay
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-12">
@@ -435,7 +435,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-2 col-lg-4 col-xl-3">
+                                                <div class="col-md-6 col-sm-6 col-12 col-lg-3 col-xl-3">
                                                     <div class="storysectionItem bg-white rounded-4 shadow p-4">
                                                         <div class="row gy-2">
                                                             <div class="col-md-12">
@@ -450,7 +450,7 @@
                                                             </div>
                                                             <div class="col-md-12">
                                                                 <div class="storyClientName text-theme1 fw-bold">
-                                                                    Preetam  & Pallavi
+                                                                    Payal & Ajay
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-12">
@@ -484,7 +484,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-2 col-lg-4 col-xl-3">
+                                                <div class="col-md-6 col-sm-6 col-12 col-lg-3 col-xl-3">
                                                     <div class="storysectionItem bg-white rounded-4 shadow p-4">
                                                         <div class="row gy-2">
                                                             <div class="col-md-12">
@@ -499,7 +499,7 @@
                                                             </div>
                                                             <div class="col-md-12">
                                                                 <div class="storyClientName text-theme1 fw-bold">
-                                                                    Preetam  & Pallavi
+                                                                    Payal & Ajay
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-12">
@@ -613,78 +613,40 @@
 
         <script>
             $('.testimonialCarousel').owlCarousel({
-                margin:10,
+                
                 nav: true,
-                navText: ["<img src='./assets/img/icons/leftarrowDark.svg' class='img-fluid p-2'>","<img src='./assets/img/icons/rightarrowDark.svg' class='img-fluid p-2'>"],
+                navText: ["<img src='./assets/img/icons/leftarrowDark.svg' class='img-fluid'>","<img src='./assets/img/icons/rightarrowDark.svg' class='img-fluid'>"],
                 responsive:{
                     0:{
-                        items:2,
-                        loop:true,
-                        autoplay:false,
-                        autoplayTimeout:5000,   
-                        autoplayHoverPause:false,
+                        items:1,
+                        stagePadding: 30,
+                        nav: false,
+                        margin: 15,
+                        loop: true,
                     },
                     575:{
-                        items:3,
+                        items:1,
                         loop:true,
-                        autoplay:false,
-                        autoplayTimeout:5000,
-                        autoplayHoverPause:false,
+                        margin:10,
                     },
                     768:{
                         items:1,
                         loop:true,
+                        margin:10,
                     },
                     992:{
                         items:1,
                         loop:false,
+                        margin:10,
                     },
                     1024:{
                         items:1,
                         loop:false,
+                        margin:10,
                     },
                     1300:{
                         items:1,
-                        loop:false,
-                    },
-                }
-            })
-        </script>
-
-        <script>
-            $('.sucessStory').owlCarousel({
-                margin:10,
-                nav: true,
-                navText: ["<img src='./assets/img/icons/leftarrowDark.svg' class='img-fluid p-2'>","<img src='./assets/img/icons/rightarrowDark.svg' class='img-fluid p-2'>"],
-                responsive:{
-                    0:{
-                        items:2,
-                        loop:true,
-                        autoplay:false,
-                        autoplayTimeout:5000,   
-                        autoplayHoverPause:false,
-                    },
-                    575:{
-                        items:3,
-                        loop:true,
-                        autoplay:false,
-                        autoplayTimeout:5000,
-                        autoplayHoverPause:false,
-                    },
-                    768:{
-                        items:4,
-                        loop:true,
-                    },
-                    992:{
-                        items:5,
-                        loop:false,
-                    },
-                    1024:{
-                        items:6,
-                        loop:false,
-                    },
-                    1300:{
-                        items:7,
+                        margin:10,
                         loop:false,
                     },
                 }

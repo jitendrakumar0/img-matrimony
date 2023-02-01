@@ -1,17 +1,41 @@
-<div class="container-fluid position-fixed headerFixed py-2">
+<div class="container-fluid position-fixed headerFixed py-1">
     <div class="row innerDialog mx-0">
         <div class="col-12 innerContent">
             <div class=" header ">
-                <nav class="navbar">
+                <nav class="navbar navbar-expand-lg">
                     <div class="row navInner align-items-center justify-content-between">
-                        <div class="col">
+                        <div class="col-auto">
                             <div class="logo">
                                 <a href="#" class=""><img src="assets/img/Logo/logopng.png" class="img-fluid logoImg" alt="flip"></a>
                             </div>
                         </div>
-                        <div class="col-auto">
-                            <div class="row">
+                        <div class="col headerMenu d-md-none d-lg-block d-sm-none d-none">
+                            <div class="row gy-2 justify-content-center">
                                 <div class="col-auto">
+                                    <a href="#" class="headerMenuList text-white">About Us</a>
+                                </div>
+                                <div class="col-auto">
+                                    <a href="#" class="headerMenuList text-white">Careers</a>
+                                </div>
+                                <div class="col-auto">
+                                    <a href="#" class="headerMenuList text-white">MemberShip</a>
+                                </div>
+                                <div class="col-auto">
+                                    <a href="#" class="headerMenuList text-white">Blog</a>
+                                </div>
+                                <div class="col-auto">
+                                    <a href="#" class="headerMenuList text-white">Contact us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-auto d-md-flex d-lg-none pe-md-0 pe-sm-0 pe-0 align-items-center d-flex">
+                                    <a href="#" class="menuIcon">
+                                        <img src="assets/img/icons/menuWhite.svg" class="img-fluid" alt="" data-bs-toggle="offcanvas" href="#headerLabel" role="button" aria-controls="headerLabel">
+                                    </a>
+                                </div>
+                                <div class="col-auto pe-md-0 pe-sm-0 pe-0">
                                     <button type="button" class="btn btnstyle1 shadow-none">Log In
                                         <div class="btnHoverSetting ">
                                             <ul class="btnHoverSettingInner ">
@@ -23,7 +47,7 @@
                                         </div>
                                     </button>
                                 </div>
-                                <div class="col-auto">
+                                <div class="col-auto pe-md-0 pe-sm-0 pe-0">
                                     <button type="button" class="btn btnstyle2 shadow-none">Sign Up
                                         <div class="btnHoverSetting ">
                                             <ul class="btnHoverSettingInner ">
@@ -39,6 +63,38 @@
                         </div>
                     </div>
                 </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!------------------Offcanvas---------------->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="headerLabel" aria-labelledby="headerLabelLabel">
+    <div class="offcanvas-header">
+        <a href="#" class="headerLabelLogo">
+            <img src="assets/img/Logo/logopng.png" class="img-fluid headerLabelLogoImg" alt="">
+        </a>
+        <button type="button" class="btn-close text-reset btnCloseCanvas" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="assets/img/icons/crossRed.svg" class="img-fluid" alt="">
+        </button>
+    </div>
+    <div class="offcanvas-body ">  
+        <div class="row gy-3">
+            <div class="col-12 px-0">
+                <a href="#" class="headerMenuList text-theme1 fw-bold rounded-5 p-2">About Us</a>
+            </div>
+            <div class="col-12 px-0">
+                <a href="#" class="headerMenuList text-theme1 fw-bold rounded-5 p-2">Careers</a>
+            </div>
+            <div class="col-12 px-0">
+                <a href="#" class="headerMenuList text-theme1 fw-bold rounded-5 p-2">MemberShip</a>
+            </div>
+            <div class="col-12 px-0">
+                <a href="#" class="headerMenuList text-theme1 fw-bold rounded-5 p-2">Blog</a>
+            </div>
+            <div class="col-12 px-0">
+                <a href="#" class="headerMenuList text-theme1 fw-bold rounded-5 p-2">Contact us</a>
             </div>
         </div>
     </div>
