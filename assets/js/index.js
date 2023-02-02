@@ -5,7 +5,7 @@ $(function(){
 
 $(window).scroll(function() {
 
-    if ($(this).scrollTop() > 550){  
+    if ($(this).scrollTop() > 60){  
         $('.headerFixed').addClass("contentFixed");
     }
     else{
