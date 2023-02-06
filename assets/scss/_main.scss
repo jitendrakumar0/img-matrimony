@@ -23,3 +23,63 @@ body {
 a{
   text-decoration: none;
 }
+
+.bannerSection {
+  background: lighten($color: $theme1, $amount: 60) url('../img/bg/shapeRed.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &::after{
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 200px;
+      background-position: center;
+      background-image: url('../img/bg/bannerSection.svg');
+  }
+
+  & .bannerHeading {
+      font-size: 35px;
+      font-weight: 600;
+
+  }
+
+  & .bannerBreadCrumb {
+      position: relative;
+      z-index: 2;
+      & .breadCrumbOrder {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          & .breadCrumbOrderList {
+              list-style: none;
+              padding: 0px 15px;
+              position: relative;
+              &::after {
+                  content: '>';
+                  position: absolute;
+                  top: 0;
+                  margin-left: 10px;
+                  color: $theme1;
+                  font-weight: 600;
+              }
+              &:last-child {
+                  &::after {
+                      content: none !important;
+                  }
+              }
+          }
+      }
+  }
+  
+}
