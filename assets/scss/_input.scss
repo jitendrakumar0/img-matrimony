@@ -2,7 +2,7 @@
     border-radius: 50px;
     color: $theme1 !important;
     font-size: 12px;
-    height: 36px;
+    height: 35px;
     padding: 0.375rem 0.75rem;
 
     &::placeholder {
@@ -40,4 +40,22 @@
     font-size: 16px;
     font-weight: 600;
     color: $white;
+}
+
+.formSearch {
+    padding-left: 50px;
+}
+
+.searchIcon {
+    transform: translate(0,-50%);
+    left: 20px;
+    // width: 20px;
+    // height: 20px;
+    padding: 3px;
+}
+
+.searchIconImg {
+    aspect-ratio: 10/10;
+    object-fit: cover;
+    object-position: top center;
 }

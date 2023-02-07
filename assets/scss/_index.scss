@@ -826,7 +826,7 @@
         }
 
         & .owl-nav {
-            display: block !important;
+            display: block ;
             & .owl-prev {
                 background: $white;
                 border-radius: 50px;
@@ -869,51 +869,428 @@
             }
         }
 
-        & .serviceFilter {
-
-            & .serviceFilter  {
-                
-            }
-
-            & .filterheading {
-                font-size: 18px;
-                font-weight: 700;
-            }
-
-            & .filterApplied {
-                font-size: 16px;
-                font-weight: 700;
-                color: $theme1;
-            }
-
-            & .filterTypeName  {
-                
-                font-size: 16px;
-                font-weight: 700;
-                color: $theme1;
-            }
-            & label {
-                border:1px  solid $theme2 !important;
-                font-size: 12px;
-                font-weight: 400;
-                text-transform: capitalize;
-                cursor: pointer;
-                // background-color: lighten($theme1, 65);
-            }
-            & input {
-                &.form-control {
-                    &:checked ~ label
-                     {
+        & .serviceFilterLeft {
+            & .serviceFilter {
+                position: sticky;
+                top: 100px;
+                & .filterheading {
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+    
+                & .filterApplied {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $theme1;
+                }
+    
+                & .filterList {
+                    // overflow-y: auto;
+                    // height: calc(100vh - 100px);
+                    & .filterTypeName  {
+                    
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: $theme1;
+                    }
+                    & label {
                         border:1px  solid $theme2 !important;
-                        font-weight: 600;
-                        box-shadow: 1px 1px 9px 0px rgb($theme2, 0.4);
+                        font-size: 12px;
+                        font-weight: 400;
+                        text-transform: capitalize;
+                        cursor: pointer;
+                        // background-color: lighten($theme1, 65);
+                    }
+                    & input {
+                        &.form-control {
+                            &:checked ~ label
+                            {
+                                border:1px  solid $theme2 !important;
+                                font-weight: 600;
+                                box-shadow: 1px 1px 9px 0px rgb($theme2, 0.4);
+        
+                            }              
+                        }
+                    }
+                }
+            }
+        }
 
-                    }              
+        & .serviceItems {
+
+            & .serviceItemSearch {
+                // position: sticky;
+                // top: 100px;
+
+                & .filterListNumber {
+                    background-color: rgb($theme2, 0.1);
+                    font-size: 12px;
+                }
+
+                & .filterListIcon {
+                    background-color: rgb($theme2, 0.1);
+                    cursor: pointer;
+                    & .filterListIconImg {
+                        aspect-ratio: 10/10;
+                        width: 10px;
+                        height: 10px;
+                        object-fit: cover;
+                        object-position: top center;
+                    }
+
+                }
+            }
+            & .serviceFilterItems {
+
+                & .serviceListItems {
+                    height: 180px;
+                    width: 100%;
+
+                    & .serviceListImg {
+                        aspect-ratio: 10/10;
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: top center;
+                    }
+                }
+
+                & .serviceDetails {
+                    & .serviceName {
+                        font-size: 16px;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                        // display: -webkit-box;
+                        // -webkit-line-clamp: 1;
+                        // -webkit-box-orient: vertical;
+                        // overflow: hidden;
+                        // text-overflow: ellipsis;
+
+                        & .serviceNameDetails {
+                            color: $theme1;
+                        }
+                    
+                    }
+
+                    & .serviceLocation {
+                        font-size: 14px;
+                        text-transform: capitalize;
+                        font-weight: 400;
+                        color: $gray-600;
+                    }
+
+                    & .serviceRating {
+                        // width: 20px;
+                        // height: 20px;
+                        font-size: 14px;
+                        text-transform: capitalize;
+                        background-color: rgb($theme2, 0.1);
+
+                        & .starRatingImg {
+                            width: 17px;
+                            height: 17px;
+                            aspect-ratio: 10/10;
+                            object-fit: cover;
+                            object-position: top center;
+                        }
+                    }
+
+                    & .servicePrice {
+                        text-transform: capitalize;
+                        font-size: 14px;
+                        font-weight: 600;
+                        & .servicePriceImg {
+                            width: 14px;
+                            height: 14px;
+                            aspect-ratio: 10/10;
+                            object-fit: cover;
+                            object-position: top center;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    & .offcanvasFilter {
+        & .offcanvas-body {
+            & .serviceFilterLeft {
+                & .serviceFilter {
+                    position: sticky;
+                    top: 100px;
+                    & .filterheading {
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+        
+                    & .filterApplied {
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: $theme1;
+                    }
+        
+                    & .filterList {
+                        // overflow-y: auto;
+                        // height: calc(100vh - 100px);
+                        & .filterTypeName  {
+                        
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: $theme1;
+                        }
+                        & label {
+                            border:1px  solid $theme2 !important;
+                            font-size: 12px;
+                            font-weight: 400;
+                            text-transform: capitalize;
+                            cursor: pointer;
+                            // background-color: lighten($theme1, 65);
+                        }
+                        & input {
+                            &.form-control {
+                                &:checked ~ label{
+                                    border:1px  solid $theme2 !important;
+                                    font-weight: 600;
+                                    box-shadow: 1px 1px 9px 0px rgb($theme2, 0.4);
+            
+                                }              
+                            }
+                        }
+                    }
                 }
             }
         }
     }
+    
 }
+
+
+/*------------------responsive--------------------------*/
+@mixin serviceList-mixin-min-sm(){
+};
+@mixin serviceList-mixin-min-md(){
+};
+@mixin serviceList-mixin-min-lg(){
+
+};
+@mixin serviceList-mixin-min-xl(){
+
+};
+@mixin serviceList-mixin-min-xxl(){
+
+};
+@mixin serviceList-mixin-max-xl(){
+
+};
+@mixin serviceList-mixin-max-1300(){
+
+};
+@mixin serviceList-mixin-max-lg(){
+
+};
+@mixin serviceList-mixin-max-md(){
+    .serviceListBg {
+        & .allServicesTab {
+            & .owlService { 
+                & .item{
+                    & .itemsContent {
+                    }
+                }
+            } 
+        }
+
+        & .owl-dots {
+        }
+
+        & .owl-nav {
+            & .owl-prev {
+            }
+            & .owl-next {
+            }
+            & .owl-prev {
+                &.disabled {
+                }
+            }
+            & .owl-next {
+                &.disabled {
+                }
+            }
+        }
+
+        & .serviceFilterLeft {
+            & .serviceFilter {
+
+                & .serviceFilter  {
+                    
+                }
+    
+                & .filterList {
+                    & .filterheading {
+                    }
+        
+                    & .filterApplied {
+                    }
+        
+                    & .filterTypeName  {
+                    }
+                    & label {
+                    }
+                    & input {
+                        &.form-control {
+                            &:checked ~ label {
+                            }              
+                        }
+                    }
+                }
+            }
+        }
+
+        & .serviceItems {
+            & .serviceItemSearch {
+                position: sticky;
+                top: 60px;
+                background-color: white;
+                padding: 20px 0px;
+                & .filterListNumber {
+                }
+            }
+            & .serviceFilterItems {
+
+                & .serviceListItems {
+
+                    & .serviceListImg {
+                    }
+                }
+
+                & .serviceDetails {
+                    & .serviceName {
+
+                        & .serviceNameDetails {
+                        }
+                    }
+
+                    & .serviceLocation {
+                    }
+
+                    & .serviceRating {
+
+                        & .starRatingImg {
+                        }
+                    }
+
+                    & .servicePrice {
+                        & .servicePriceImg {
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+@mixin serviceList-mixin-max-sm(){
+
+};
+@mixin serviceList-mixin-max-xs(){
+    .serviceListBg {
+        & .allServicesTab {
+            & .owlService { 
+                & .item{
+                    & .itemsContent {
+                    }
+                }
+            } 
+        }
+
+        & .owl-dots {
+            display: none;
+        }
+
+        & .owl-nav {
+            display: none !important;
+            & .owl-prev {
+            }
+            & .owl-next {
+            }
+            & .owl-prev {
+                &.disabled {
+                }
+            }
+            & .owl-next {
+                &.disabled {
+                }
+            }
+        }
+
+        & .serviceFilterLeft {
+            display: none;
+            & .serviceFilter {
+
+                & .serviceFilter  {
+                    
+                }
+    
+                & .filterList {
+                    & .filterheading {
+                    }
+        
+                    & .filterApplied {
+                    }
+        
+                    & .filterTypeName  {
+                    }
+                    & label {
+                    }
+                    & input {
+                        &.form-control {
+                            &:checked ~ label {
+                            }              
+                        }
+                    }
+                }
+            }
+        }
+
+        & .serviceItems {
+            & .filterListNumber {
+            }
+            & .serviceFilterItems {
+
+                & .serviceListItems {
+
+                    & .serviceListImg {
+                    }
+                }
+
+                & .serviceDetails {
+                    & .serviceName {
+
+                        & .serviceNameDetails {
+                        }
+                    }
+
+                    & .serviceLocation {
+                    }
+
+                    & .serviceRating {
+
+                        & .starRatingImg {
+                        }
+                    }
+
+                    & .servicePrice {
+                        & .servicePriceImg {
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+
+
+
+
 
 //! ################################## End Service list ###################################
 
