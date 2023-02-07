@@ -35,35 +35,42 @@
             font-weight: 400;
             
         }
-        & .bannerForm {
-            & .formHeading {
-                font-size: 16px;
-                font-weight: 600;
-                text-transform: capitalize;
-            }
+    }
+}
 
-            & .searchControl {
-                padding-left: 34px;
-            }
 
-            & .searchButton {
-                position: absolute;
-                top: 50%;
-                transform: translate(0, -50%);
-                left: 14px;
-                width: 14px;
-                height: 14px;
-                display: flex;
-                align-items: center;
-                padding: 0;
-                
-                & .searchIcon {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    aspect-ratio: 10/10;
-                }
-            }
+ .bannerForm {
+    margin-top: -90px;
+    // background-color: rgb($theme1, 0.2);
+    background-color: $theme2;
+    position: relative;
+    z-index: 2;
+    & .formHeading {
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    & .searchControl {
+        padding-left: 34px;
+    }
+
+    & .searchButton {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 14px;
+        width: 14px;
+        height: 14px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        
+        & .searchIcon {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            aspect-ratio: 10/10;
         }
     }
 }
@@ -792,6 +799,123 @@
 }
 
 //! ################################## End How it Work ###################################
+
+
+//? ################################# How it Work ###################################
+
+[page-name=serviceList]{
+    & .serviceListBg {
+        
+        & .allServicesTab {
+            background-color: rgb($theme2, 0.1);
+            & .owlService { 
+    
+                 & .item{
+                    
+                    & .itemsContent {
+                        font-size: 14px;
+                        font-weight: 600;
+                        background: white;
+                    }
+                 }
+            } 
+        }
+
+        & .owl-dots {
+            display: none;
+        }
+
+        & .owl-nav {
+            display: block !important;
+            & .owl-prev {
+                background: $white;
+                border-radius: 50px;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 7px !important;
+                position: absolute;
+                left: 0px;
+                top: 50%;
+                box-shadow: 1px 1px 6px 0px $theme2;
+                transform: translate(0,-50%);
+            }
+            & .owl-next {
+                background: $white;
+                border-radius: 50px;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 7px !important;
+                position: absolute;
+                right: 0px;
+                top: 50%;
+                transform: translate(0,-50%);
+                box-shadow: 1px 1px 6px 0px $theme2;
+            }
+            & .owl-prev {
+                &.disabled {
+                    display: none;
+                }
+            }
+            & .owl-next {
+                &.disabled {
+                    display: none;
+                }
+            }
+        }
+
+        & .serviceFilter {
+
+            & .serviceFilter  {
+                
+            }
+
+            & .filterheading {
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            & .filterApplied {
+                font-size: 16px;
+                font-weight: 700;
+                color: $theme1;
+            }
+
+            & .filterTypeName  {
+                
+                font-size: 16px;
+                font-weight: 700;
+                color: $theme1;
+            }
+            & label {
+                border:1px  solid $theme2 !important;
+                font-size: 12px;
+                font-weight: 400;
+                text-transform: capitalize;
+                cursor: pointer;
+                // background-color: lighten($theme1, 65);
+            }
+            & input {
+                &.form-control {
+                    &:checked ~ label
+                     {
+                        border:1px  solid $theme2 !important;
+                        font-weight: 600;
+                        box-shadow: 1px 1px 9px 0px rgb($theme2, 0.4);
+
+                    }              
+                }
+            }
+        }
+    }
+}
+
+//! ################################## End Service list ###################################
 
 
 
