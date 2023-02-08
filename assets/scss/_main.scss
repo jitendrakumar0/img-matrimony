@@ -141,3 +141,33 @@ a{
         }
     }
 }
+
+.detailHeading {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.detailPara {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.accordion {
+  & .accordion-item  {
+    border: 1px solid $white;
+
+    & .accordion-button{
+      color: $black;
+      font-size: 18px;
+      text-transform: capitalize;
+      &:hover {
+        color: $theme1;
+      }
+      &:not(.collapsed){
+        background-color: transparent;
+      }
+    }
+  }
+  
+}

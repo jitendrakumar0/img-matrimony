@@ -1455,6 +1455,102 @@
 
     }
 
+    & .serviceGalleryList {
+
+        & .owlServiceImgList {
+
+            & .owl-stage-outer {
+                & .items {
+                    width: 100px;
+                    height: 100px;
+                    display: flex;
+                    & .serviceListImg{
+                        width: 100%;
+                        height: 100%;
+                        aspect-ratio: 10/10;
+                        object-fit: cover;
+                        object-position: top center;
+
+                    }
+                }
+
+            }
+            
+            & .owl-dots {
+                display: none;
+            }
+            & .owl-nav {
+                display: flex !important;
+    
+                & .owl-prev{
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(0,-50%);
+                    left: 0;
+                    width: 31px;
+                    height: 31px;
+                    display: flex;
+                    padding: 7px !important;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50px;
+                    border: 1px solid $theme1 !important;
+                    padding: 7px !important;
+                    background-color: white;
+                    // border-color:$theme1 $theme2 $theme1 $theme2 !important;
+                    &.disabled  {
+                    display: none;
+                    }
+                    
+                }
+                & .owl-next{
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(0,-50%);
+                    right: 0;
+                    width: 31px;
+                    height: 31px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50px;
+                    border: 1px solid $theme1 !important;
+                    padding: 7px !important;
+                    background-color: white;
+                    // border-color:$theme1 $theme2 $theme1 $theme2 !important;
+                    &.disabled  {
+                        display: none;
+                    }
+                    
+                }
+            }
+
+        }
+    }
+
+    & .servicePriceDetails {
+        & .serviceprice {
+            width: 14px;
+            height: 14px;
+            
+        & .servicepriceImg {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 10/10;
+            object-fit: cover;
+            object-position: top center;
+        }
+        }
+
+        & .serviceRating {
+            & .serviceRatingList {
+                list-style-type: none;  
+                
+            }
+        }
+    }
+
+
 }
 
 
