@@ -1,5 +1,3 @@
-
-
 .banner {
     height: 550px;
     
@@ -932,8 +930,8 @@
                     cursor: pointer;
                     & .filterListIconImg {
                         aspect-ratio: 10/10;
-                        width: 10px;
-                        height: 10px;
+                        width: 15px;
+                        height: 15px;
                         object-fit: cover;
                         object-position: top center;
                     }
@@ -951,7 +949,7 @@
                         height: 100%;
                         width: 100%;
                         object-fit: cover;
-                        object-position: top center;
+                        // object-position: top center;
                     }
                 }
 
@@ -1014,6 +1012,33 @@
     }
 
     & .offcanvasFilter {
+        & .offcanvas-header {
+            & .btn-close {
+                background:none;
+                position: relative;
+                height: 20px;
+                width: 20px;
+                opacity: 1;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    background-image: url('../img/icons/close.svg');
+                    width: 15px;
+                    height: 15px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                // background-image: url('../img/icons/close.png');
+                // border: 2px solid $theme1;
+                // opacity: 1;
+                // object-fit: cover;
+                // background-position: center;
+                // padding: 10px;
+            }
+        }
         & .offcanvas-body {
             & .serviceFilterLeft {
                 & .serviceFilter {
@@ -1072,16 +1097,12 @@
 @mixin serviceList-mixin-min-md(){
 };
 @mixin serviceList-mixin-min-lg(){
-
 };
 @mixin serviceList-mixin-min-xl(){
-
 };
 @mixin serviceList-mixin-min-xxl(){
-
 };
 @mixin serviceList-mixin-max-xl(){
-
 };
 @mixin serviceList-mixin-max-1300(){
 
@@ -1150,7 +1171,7 @@
             & .serviceItemSearch {
                 position: sticky;
                 top: 60px;
-                background-color: white;
+                background-color: $white;
                 padding: 20px 0px;
                 & .filterListNumber {
                 }
@@ -1189,7 +1210,106 @@
     }
 };
 @mixin serviceList-mixin-max-sm(){
+    .serviceListBg {
+        & .allServicesTab {
+            & .owlService { 
+                & .item{
+                    & .itemsContent {
+                    }
+                }
+            } 
+        }
 
+        & .owl-dots {
+            display: none;
+        }
+
+        & .owl-nav {
+            display: block;
+            & .owl-prev {
+                width: 20px !important;
+                height: 20px !important;
+                padding: 3px !important;
+            }
+            & .owl-next {
+                width: 20px !important;
+                height: 20px !important;
+                padding: 3px !important;
+            }
+            & .owl-prev {
+                &.disabled {
+                }
+            }
+            & .owl-next {
+                &.disabled {
+                }
+            }
+        }
+
+        & .serviceFilterLeft {
+            display: none;
+            & .serviceFilter {
+
+                & .serviceFilter  {
+                    
+                }
+    
+                & .filterList {
+                    & .filterheading {
+                    }
+        
+                    & .filterApplied {
+                    }
+        
+                    & .filterTypeName  {
+                    }
+                    & label {
+                    }
+                    & input {
+                        &.form-control {
+                            &:checked ~ label {
+                            }              
+                        }
+                    }
+                }
+            }
+        }
+
+        & .serviceItems {
+            & .filterListNumber {
+            }
+            & .serviceFilterItems {
+
+                & .serviceListItems {
+
+                    & .serviceListImg {
+                    }
+                }
+
+                & .serviceDetails {
+                    & .serviceName {
+
+                        & .serviceNameDetails {
+                        }
+                    }
+
+                    & .serviceLocation {
+                    }
+
+                    & .serviceRating {
+
+                        & .starRatingImg {
+                        }
+                    }
+
+                    & .servicePrice {
+                        & .servicePriceImg {
+                        }
+                    }
+                }
+            }
+        }
+    }
 };
 @mixin serviceList-mixin-max-xs(){
     .serviceListBg {
@@ -1288,13 +1408,56 @@
     }
 };
 
-
-
-
-
 //! ################################## End Service list ###################################
 
 
+//? ################################# How it Work ###################################
 
+[page-name=serviceDetail]{
+
+    & .serviceGalleryOuter {
+
+        & .owlServiceDetail {
+
+            & .owl-dots {
+                display: none;
+            }
+            & .owl-nav {
+                & .owl-prev {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+                    padding: 0px 10px !important;
+                    background: rgb($theme1, 0.4);
+    
+                    &:hover {
+                        background: $theme1;
+                    }
+                }
+                & .owl-next {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+                    padding: 0px 10px !important;
+                    background: rgb($theme1, 0.4);
+                    &:hover {
+                        background: $theme1;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+
+//! ################################## End How it Work ###################################
 
 
