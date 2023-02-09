@@ -343,7 +343,7 @@
             }
         
             & .owl-nav {
-        
+                top:15%;
                 & .owl-prev{
                     &.disabled  {
                     }
@@ -503,8 +503,6 @@
     }
 };
 
-
-
 //! ################################## end Home Page ###################################
 
 //? ################################## Blog ###################################
@@ -544,7 +542,7 @@
                         aspect-ratio: 10/10;
                         object-fit: cover;
                         object-position: center;
-                        border-radius: 30px;
+                        border-radius: 20px;
                     }
                 }
 
@@ -700,6 +698,142 @@
         }
     }
 }
+
+@mixin blog-mixin-min-sm(){
+
+};
+@mixin blog-mixin-min-md(){
+
+};
+@mixin blog-mixin-min-lg(){
+
+};
+@mixin blog-mixin-min-xl(){
+
+};
+@mixin blog-mixin-min-xxl(){
+
+};
+@mixin blog-mixin-max-xl(){
+
+};
+@mixin blog-mixin-max-1300(){
+
+};
+@mixin blog-mixin-max-lg(){
+
+};
+@mixin blog-mixin-max-md(){
+    [page-name=blog] {
+        &.blog {
+            & .BlogSection {
+    
+                & .BlogLatestItem {
+                    &:hover {
+                    }
+                    & .blogLatestItems {
+                        width: 50px;
+                        height: 50px;
+                        &:hover {
+                            &::after {
+                            }
+                        }
+    
+                        & .blogLatestItemsImg {
+                            border-radius: 50px;
+                        }
+                    }
+    
+                    & .blogLatestItemsText {
+                        font-size: 14px;
+                        font-weight: 600;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+    
+                    & .blogLatestProfileList {
+    
+                        & .blogLatestProfile {
+                            & .blogLatestProfileImg {
+                            }
+                        }
+    
+                        &::after {
+                        }
+                        &:last-child {
+                            &::after {
+                            }
+                        }
+                    }
+    
+                    & .blogLatestProfileName {
+    
+                    }
+                }
+            }
+    
+            & .mostLatestBlog {
+                
+                & .mostLatestBlogContent {
+    
+                    & .blogSubHeading {
+                    }
+    
+                    & .mostBlogHeadline {
+                    }
+                    & .mostBlogdetails {
+    
+                        & .mostBlogprofileList {
+                            & .mostBlogprofile {
+                            }
+        
+                            & .mostBlogProfileName {
+                            }
+    
+                            &::after {
+                            }
+                            &:last-child {
+                                &::after {
+                                }
+                            }
+                        }
+    
+                        
+                    }
+                }
+            }
+    
+            & .storysectionItem {
+                & .storySectionImg {
+                    &:hover {
+                        & .storyDate {
+                        }
+                    }
+                }
+                & .storyDate {
+                }
+        
+                & .storyPara {
+                }
+                & .storySocialiConnection {
+                    & img {
+                    }
+                    &:hover{
+                    }
+                }
+            }
+        }
+    }
+};
+@mixin blog-mixin-max-sm(){
+
+};
+@mixin blog-mixin-max-xs(){
+
+};
 
 //! ################################## End Blog ###################################
 
@@ -1533,19 +1667,255 @@
             width: 14px;
             height: 14px;
             
-        & .servicepriceImg {
-            width: 100%;
-            height: 100%;
-            aspect-ratio: 10/10;
-            object-fit: cover;
-            object-position: top center;
+            & .servicepriceImg {
+                width: 100%;
+                height: 100%;
+                aspect-ratio: 10/10;
+                object-fit: cover;
+                object-position: top center;
+            }
         }
+
+        
+        & .servicePriceAmount {
+            font-size: 16px;
+            font-weight: 600;
         }
 
         & .serviceRating {
-            & .serviceRatingList {
-                list-style-type: none;  
-                
+            & .serviceRatingOrder {
+                column-gap: 2px;
+                & .serviceRatingList {
+                    list-style-type: none;  
+                    width: 14px;
+    
+                }
+            }
+        }
+    } 
+
+    & .serviceReview {
+        & .serviceReviewTotal {
+
+            & .serviceReviewCount {
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            & .serviceRating {
+                & .serviceRatingOrder {
+                    column-gap: 2px;
+                    & .serviceRatingList {
+                        list-style-type: none;  
+                        width: 14px;
+                    }
+                }
+            }
+
+            & .serviceReviewAll{
+                font-size: 16px;
+                font-weight: 600;
+                color: $gray-700;
+            }
+
+            & .serviceReviwResult {
+                & .serviceREviewType {
+                    font-size: 14px;
+                    text-transform: capitalize;
+                    color: $gray-700;
+                }
+                & .serviceReviewrange {
+                    & .progress {
+                        height: 7px;
+                    }
+                }
+            }
+
+            & .serviceReviewDetail {
+
+                & .serviceReviewProfile {
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+
+                    & .serviceReviewProfileImg {
+                        aspect-ratio: 10/10;
+                        object-fit: cover;
+                        object-position: top center;
+                    }
+                }
+
+                & .serviceReviewName {
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                }
+
+                & .serviceRating {
+                    & .serviceRatingOrder {
+                        column-gap: 2px;
+                        & .serviceRatingList {
+                            list-style-type: none;  
+                            width: 14px;
+                        }
+                    }
+                }
+
+                & .serviceReviewDays {
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    color: $theme2;
+                }
+
+                & .servicceReviewContent {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $gray-700;
+                }
+            }
+
+
+        }
+    }
+
+    & .serviceDetailsRight {
+        position: sticky;
+        top: 100px;
+        & .serviceApplied {
+
+            & .serviceproviderApply {
+                font-size: 24px;
+                font-weight: 600;
+                text-transform: capitalize;
+                color: $theme1;
+            }
+
+            & .serviceproviderDetail {
+                & .serviceproviderProfile {
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+    
+                    & .serviceProviderProfileImg {
+                        aspect-ratio: 10/10;
+                        object-fit: cover;
+                        object-position: top center;
+                    }
+                }
+    
+                & .serviceproviderName {
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                }
+
+                & .serviceprovidePrice {
+                    width: 14px;
+                    height: 14px;
+
+                    & .serviceprovidePriceImg {
+                        aspect-ratio: 10/10;
+                        object-fit: cover;
+                        object-position: top center;
+                    }
+                }
+    
+                & .serviceproviderDays {
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    color: $theme2;
+                }
+
+
+            }
+
+            & .serviceProvideSocialLink {
+                & .serviceSocialtem {
+                    & .serviceSocialIcon {
+                        width: 30px;
+                        height: 30px;
+                        border: 1px solid $theme2;
+                        padding: 7px;
+                        background-color: $white;
+                        transition: 0.3s;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .serviceFilterItems {
+
+        & .serviceListItems {
+            height: 180px;
+            width: 100%;
+
+            & .serviceListImg {
+                aspect-ratio: 10/10;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                // object-position: top center;
+            }
+        }
+
+        & .serviceDetails {
+            & .serviceName {
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: capitalize;
+                // display: -webkit-box;
+                // -webkit-line-clamp: 1;
+                // -webkit-box-orient: vertical;
+                // overflow: hidden;
+                // text-overflow: ellipsis;
+
+                & .serviceNameDetails {
+                    color: $theme1;
+                }
+            
+            }
+
+            & .serviceLocation {
+                font-size: 14px;
+                text-transform: capitalize;
+                font-weight: 400;
+                color: $gray-600;
+            }
+
+            & .serviceRating {
+                // width: 20px;
+                // height: 20px;
+                font-size: 14px;
+                text-transform: capitalize;
+                background-color: rgb($theme2, 0.1);
+
+                & .starRatingImg {
+                    width: 17px;
+                    height: 17px;
+                    aspect-ratio: 10/10;
+                    object-fit: cover;
+                    object-position: top center;
+                }
+            }
+
+            & .servicePrice {
+                text-transform: capitalize;
+                font-size: 14px;
+                font-weight: 600;
+                & .servicePriceImg {
+                    width: 14px;
+                    height: 14px;
+                    aspect-ratio: 10/10;
+                    object-fit: cover;
+                    object-position: top center;
+                }
             }
         }
     }

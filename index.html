@@ -99,12 +99,12 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="row gy-5 justify-content-center">
+                    <div class="row gy-4 justify-content-center">
                         <div class="col-md-10 col-sm-12 col-12">
-                            <div class="bannerForm p-5 rounded-4">
+                            <div class="bannerForm p-lg-5 p-4 rounded-4">
                                 <form action="#">
                                     <div class="row gy-3 align-items-center justify-content-center">
-                                        <div class="col-md-2">
+                                        <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="form-group position-relative">
                                                 <label for="" class="form-label">I'm Looking For:</label>    
                                                 <select class="form-select shadow-none" id="">
@@ -113,11 +113,11 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="form-group position-relative">
                                                 <label for="" class="form-label">Aged</label>    
-                                                <div class="row">
-                                                    <div class="col-md-5">
+                                                <div class="row gy-2">
+                                                    <div class="col-md-5 col-5 col-sm-5">
                                                         <select class="form-select shadow-none" id="">
                                                             <option selected>18</option>
                                                             <option value="">19</option>
@@ -131,12 +131,12 @@
                                                             <option value="">27</option>
                                                         </select>
                                                     </div>
-                                                    <div class="col-md-2">
+                                                    <div class="col-md-2 col-2 text-center col-sm-2">
                                                         <div class="aged">
                                                             to
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-5">
+                                                    <div class="col-md-5 col-5 col-sm-5">
                                                         <select class="form-select shadow-none" id="">
                                                             <option selected>18</option>
                                                             <option selected>19</option>
@@ -154,7 +154,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        <div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12">
                                             <div class="form-group position-relative">
                                                 <label for="" class="form-label">Religion</label>    
                                                 <select class="form-select shadow-none" id="">
@@ -165,7 +165,7 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-12">
                                             <div class="form-group position-relative">
                                                 <label for="" class="form-label">Mother Toungue:</label>    
                                                 <select class="form-select shadow-none" id="">
@@ -180,9 +180,9 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-md-2">
-                                            <label for="" class="form-label invisible d-block">sdf</label>    
-                                            <button type="button" class="btn btnstyle1 shadow-none w-100">
+                                        <div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12 text-center">
+                                            <label for="" class="form-label invisible d-none d-sm-block">sdf</label>    
+                                            <button type="button" class="btn btnstyle1 shadow-none w-50 w-sm-100 py-2">
                                                 Let's Begin
                                                 <div class="btnHoverSetting ">
                                                     <ul class="btnHoverSettingInner ">
@@ -218,7 +218,7 @@
                             </div>
                         </div>
                         <div class="col-12 pt-4">
-                            <div class="container">
+                            <div class="container-lg">
                                 <div class="service">
                                     <div class="row">
                                         <div class="col-12 pb-4">
@@ -341,7 +341,7 @@
                             </div>
                         </div>
                         <div class="col-12  bgTestimonial bg-light py-5">
-                            <div class="container">
+                            <div class="container-lg">
                                 <div class="testimonial py-0 py-sm-5">
                                     <div class="row gy-3">
                                         <div class="col-md-5 col-sm-12 col-lg-4 col-auto">
@@ -420,7 +420,7 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="container">
+                            <div class="container-lg">
                                 <div class="storySection">
                                     <div class="row gy-5">
                                         <div class="col-12">
@@ -721,8 +721,18 @@
                         nav: false,
                         margin: 15,
                         loop: true,
+                        autoplay: true,
+                        autoplaySpeed: 2200,
+                        autoplayTimeout: 2200,
+                        // autoplayHoverPause: true,
+                        slideTransition: 'linear',
                     },
                     575:{
+                        autoplay: true,
+                        autoplaySpeed: 2200,
+                        autoplayTimeout: 2200,
+                        // autoplayHoverPause: true,
+                        slideTransition: 'linear',
                         items:1,
                         loop:true,
                         margin:10,

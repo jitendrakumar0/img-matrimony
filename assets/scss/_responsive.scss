@@ -4,48 +4,57 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   @include serviceList-mixin-min-sm();
+  @include blog-mixin-min-sm();
+
 
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   @include serviceList-mixin-min-md();
+  @include blog-mixin-min-md();
 
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   @include serviceList-mixin-min-lg();
+  @include blog-mixin-min-lg();
 
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   @include serviceList-mixin-min-xl();
+  @include blog-mixin-min-xl();
 
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
   @include serviceList-mixin-min-xxl();
+  @include blog-mixin-min-xxl();
 
 }
 
 // X-Large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {
   @include serviceList-mixin-max-xl();
+  @include blog-mixin-max-xl();
 
 }
 
 // Large devices (desktops, less than 1300px)
 @media (max-width: 1299.98px) {
   @include serviceList-mixin-max-1300();
+    @include blog-mixin-max-1300();
 
 }
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
   @include serviceList-mixin-max-lg();
+  @include blog-mixin-max-lg();
 
 }
 
@@ -54,6 +63,7 @@
   @include button-mixin-max-md();
   @include testimonial-mixin-max-md();
   @include serviceList-mixin-max-md();
+  @include blog-mixin-max-md();
 
 }
 
@@ -61,6 +71,7 @@
 @media (max-width: 767.98px) {
   @include service-mixin-max-sm();
   @include serviceList-mixin-max-sm();
+  @include blog-mixin-max-sm();
 
 }
 
@@ -69,6 +80,7 @@
   @include service-mixin-max-xs();
   @include heading-mixin-max-xs();
   @include serviceList-mixin-max-xs();
+  @include blog-mixin-max-xs();
 
 
   // @include heading-fs-12-mixin-max-xs();
