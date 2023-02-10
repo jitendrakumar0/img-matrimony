@@ -783,6 +783,12 @@
                     }
     
                     & .mostBlogHeadline {
+                        font-size: 18px;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                     }
                     & .mostBlogdetails {
     
@@ -1786,9 +1792,9 @@
 
             & .serviceproviderApply {
                 font-size: 24px;
-                font-weight: 600;
+                font-weight: 700;
                 text-transform: capitalize;
-                color: $theme1;
+                color: $theme2;
             }
 
             & .serviceproviderDetail {
@@ -1833,6 +1839,10 @@
 
             & .serviceProvideSocialLink {
                 & .serviceSocialtem {
+                    padding-right: 0px !important;
+                    &:last-child{
+                        padding-right: 15px !important;
+                    }
                     & .serviceSocialIcon {
                         width: 30px;
                         height: 30px;
@@ -1923,7 +1933,878 @@
 
 }
 
+/*---------------responsive---------------------*/
+@mixin serviceDetail-mixin-min-sm(){
+
+};
+@mixin serviceDetail-mixin-min-md(){
+
+};
+@mixin serviceDetail-mixin-min-lg(){
+
+};
+@mixin serviceDetail-mixin-min-xl(){
+
+};
+@mixin serviceDetail-mixin-min-xxl(){
+
+};
+@mixin serviceDetail-mixin-max-xl(){
+
+};
+@mixin serviceDetail-mixin-max-1300(){
+
+};
+@mixin serviceDetail-mixin-max-lg(){
+
+};
+@mixin serviceDetail-mixin-max-md(){
+    [page-name=serviceDetail]{
+
+    & .serviceGalleryOuter {
+
+        & .owlServiceDetail {
+
+            & .owl-dots {
+                display: none;
+            }
+            & .owl-nav {
+                & .owl-prev {
+    
+                    &:hover {
+                    }
+                }
+                & .owl-next {
+                    &:hover {
+                    }
+                }
+            }
+        }
+
+    }
+
+    & .serviceGalleryList {
+
+        & .owlServiceImgList {
+
+            & .owl-stage-outer {
+                & .items {
+                    & .serviceListImg{
+
+                    }
+                }
+
+            }
+            
+            & .owl-dots {
+            }
+            & .owl-nav {
+    
+                & .owl-prev{
+                    &.disabled  {
+                    }
+                    
+                }
+                & .owl-next{
+                    &.disabled  {
+                    }
+                    
+                }
+            }
+
+        }
+    }
+
+    & .servicePriceDetails {
+        & .serviceprice {
+            
+            & .servicepriceImg {
+            }
+        }
+
+        
+        & .servicePriceAmount {
+        }
+
+        & .serviceRating {
+            & .serviceRatingOrder {
+                & .serviceRatingList {
+    
+                }
+            }
+        }
+    } 
+
+    & .serviceReview {
+        & .serviceReviewTotal {
+
+            & .serviceReviewCount {
+            }
+
+            & .serviceRating {
+                & .serviceRatingOrder {
+                    & .serviceRatingList {
+                    }
+                }
+            }
+
+            & .serviceReviewAll{
+            }
+
+            & .serviceReviwResult {
+                & .serviceREviewType {
+                    
+                }
+                & .serviceReviewrange {
+                    & .progress {
+                    }
+                }
+            }
+
+            & .serviceReviewDetail {
+
+                & .serviceReviewProfile {
+
+                    & .serviceReviewProfileImg {
+                    }
+                }
+
+                & .serviceReviewName {
+                }
+
+                & .serviceRating {
+                    & .serviceRatingOrder {
+                        & .serviceRatingList {
+                        }
+                    }
+                }
+
+                & .serviceReviewDays {
+                }
+
+                & .servicceReviewContent {
+                }
+            }
+
+
+        }
+    }
+
+    & .serviceDetailsRight {
+        & .serviceApplied {
+
+            & .serviceproviderApply {
+                font-size: 18px;
+            }
+
+            & .serviceproviderDetail {
+                & .serviceproviderProfile {
+    
+                    & .serviceProviderProfileImg {
+                    }
+                }
+    
+                & .serviceproviderName {
+                    font-size: 14px;
+                }
+
+                & .serviceprovidePrice {
+
+                    & .serviceprovidePriceImg {
+                    }
+                }
+    
+                & .serviceproviderDays {
+                }
+
+
+            }
+
+            & .serviceProvideSocialLink {
+                & .serviceSocialtem {
+                    &:last-child{
+                    }
+                    & .serviceSocialIcon {
+
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .serviceFilterItems {
+
+        & .serviceListItems {
+
+            & .serviceListImg {
+            }
+        }
+
+        & .serviceDetails {
+            & .serviceName {
+
+                & .serviceNameDetails {
+                }
+            
+            }
+
+            & .serviceLocation {
+            }
+
+            & .serviceRating {
+
+                & .starRatingImg {
+                }
+            }
+
+            & .servicePrice {
+                & .servicePriceImg {
+                }
+            }
+        }
+    }
+
+
+    }
+};
+@mixin serviceDetail-mixin-max-sm(){
+};
+@mixin serviceDetail-mixin-max-xs(){
+    [page-name=serviceDetail]{
+
+        & .serviceGalleryOuter {
+    
+            & .owlServiceDetail {
+    
+                & .owl-dots {
+                    display: none;
+                }
+                & .owl-nav {
+                    & .owl-prev {
+        
+                        &:hover {
+                        }
+                    }
+                    & .owl-next {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+    
+        }
+    
+        & .serviceGalleryList {
+    
+            & .owlServiceImgList {
+    
+                & .owl-stage-outer {
+                    & .items {
+                        & .serviceListImg{
+    
+                        }
+                    }
+    
+                }
+                
+                & .owl-dots {
+                }
+                & .owl-nav {
+        
+                    & .owl-prev{
+                        &.disabled  {
+                        }
+                        
+                    }
+                    & .owl-next{
+                        &.disabled  {
+                        }
+                        
+                    }
+                }
+    
+            }
+        }
+    
+        & .servicePriceDetails {
+            & .serviceprice {
+                
+                & .servicepriceImg {
+                }
+            }
+    
+            
+            & .servicePriceAmount {
+            }
+    
+            & .serviceRating {
+                & .serviceRatingOrder {
+                    & .serviceRatingList {
+        
+                    }
+                }
+            }
+        } 
+    
+        & .serviceReview {
+            & .serviceReviewTotal {
+    
+                    font-size: 12px;
+                & .serviceReviewCount {
+                    font-size: 12px;
+                }
+    
+                & .serviceRating {
+                    & .serviceRatingOrder {
+                        & .serviceRatingList {
+                        }
+                    }
+                }
+    
+                & .serviceReviewAll{
+                }
+    
+                & .serviceReviwResult {
+                    & .serviceREviewType {
+                        font-size: 12px;
+                        
+                    }
+                    & .serviceReviewrange {
+                        & .progress {
+                        }
+                    }
+                }
+    
+                & .serviceReviewDetail {
+    
+                    & .serviceReviewProfile {
+    
+                        & .serviceReviewProfileImg {
+                        }
+                    }
+    
+                    & .serviceReviewName {
+                    }
+    
+                    & .serviceRating {
+                        & .serviceRatingOrder {
+                            & .serviceRatingList {
+                            }
+                        }
+                    }
+    
+                    & .serviceReviewDays {
+                    }
+    
+                    & .servicceReviewContent {
+                        font-size: 12px;
+                    }
+                }
+    
+    
+            }
+        }
+    
+        & .serviceDetailsRight {
+            & .serviceApplied {
+    
+                & .serviceproviderApply {
+                    font-size: 18px;
+                }
+    
+                & .serviceproviderDetail {
+                    & .serviceproviderProfile {
+        
+                        & .serviceProviderProfileImg {
+                        }
+                    }
+        
+                    & .serviceproviderName {
+                        font-size: 14px;
+                    }
+    
+                    & .serviceprovidePrice {
+    
+                        & .serviceprovidePriceImg {
+                        }
+                    }
+        
+                    & .serviceproviderDays {
+                        font-size: 12px;
+                    }
+    
+    
+                }
+    
+                & .serviceProvideSocialLink {
+                    & .serviceSocialtem {
+                        &:last-child{
+                        }
+                        & .serviceSocialIcon {
+    
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        & .serviceFilterItems {
+    
+            & .serviceListItems {
+    
+                & .serviceListImg {
+                }
+            }
+    
+            & .serviceDetails {
+                & .serviceName {
+    
+                    & .serviceNameDetails {
+                    }
+                
+                }
+    
+                & .serviceLocation {
+                }
+    
+                & .serviceRating {
+    
+                    & .starRatingImg {
+                    }
+                }
+    
+                & .servicePrice {
+                    & .servicePriceImg {
+                    }
+                }
+            }
+        }
+    
+    
+        }
+};
+
 
 //! ################################## End How it Work ###################################
 
+//? ##################################  Premium Plan ###################################
+
+[page-name=premiumPlan]{
+    & .premiumPlan {
+        & .owlpremiumPlan {
+            & .owl-stage-outer {
+
+                & .item {
+                    transition: 0.3s ease;
+                    & .owlItems {
+                        & .planType {
+                            & .planTypeHeader {
+                                text-transform: capitalize;
+                                font-size: 16px;
+                                font-weight: 600;
+                                & span {
+                                    color: $gray-700;
+                                    font-size: 16px;
+                                }
+                            }
+                            & .planOff {
+                                font-size: 16px;
+        
+                                & span {
+                                    font-size: 14px;
+                                    color: $gray-500
+                                }
+                            }
+                            & .planAmount {
+                                width: 22px;
+                                height: 22px;
+                                & .planAmountImg {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    aspect-ratio: 10/10;
+                                }
+                            }
+                            
+                            & .planAmountCount {
+                                color: $theme2;
+                                font-size: 26px;
+                            }
+                            & .planAmounPerMonth {
+                                font-size: 12px;
+                                color: $gray-700;
+                                font-weight: 600;
+                            }
+                            & .planList {
+        
+                                & .planListItem {
+                                    margin: 0;
+                                    padding: 0;
+                                    & .planListItems {
+                                        color: $gray-600;
+                                        font-size: 14px;
+                                        list-style: none;
+                                        padding-bottom: 10px;
+                                        padding-top: 10px;
+                                        border-bottom: 1px solid $gray-300;
+                                        position: relative;
+                                        &:last-child{
+                                            border-bottom: none !important;
+                                        }
+                                        &::before {
+                                            content: "";
+                                            background: url('../img/icons/check.png');
+                                            width: 10px;
+                                            height: 10px;
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 0px;
+                                            transform: translate(0, -50%);
+                                            background-position: top center;
+                                            background-size: cover;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                        &:hover {
+                            & .planTypeHeader  {
+                                color: $theme1 !important;
+                            }
+                        }
+                    }
+                    &:hover {
+                        transform: scale(1.02)
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+/*-----------------------resposnive-----------------------*/
+@mixin premiumPlan-mixin-min-sm(){
+[page-name=premiumPlan]{
+    & .premiumPlan {
+        & .owlpremiumPlan {
+            & .owl-stage-outer {
+                & .item {
+                    & .owlItems {
+                        & .planType {
+                            & .planTypeHeader {
+                                & span {
+        
+                                }
+                            }
+                            
+                            & .planOff {
+                                
+                                & span {
+                                    
+                                }
+                            }
+                            & .planAmount {
+                                & .planAmountImg {
+                                    
+                                }
+                            }
+                            & .planAmountCount {
+                            }
+                            & .planAmounPerMonth {
+        
+                            }
+                            & .planList {
+        
+                                & .planListItem {
+        
+                                    & .planListItems {
+                                        
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                            & .planTypeHeader  {
+                                color: $theme1 !important;
+                            }
+                        }
+                    }
+                    &:hover {
+                        transform: scale(1.02)
+                    }
+                }
+            }
+        }
+    }
+}
+};
+@mixin premiumPlan-mixin-min-md(){
+
+};
+@mixin premiumPlan-mixin-min-lg(){
+
+};
+@mixin premiumPlan-mixin-min-xl(){
+
+};
+@mixin premiumPlan-mixin-min-xxl(){
+
+};
+@mixin premiumPlan-mixin-max-xl(){
+
+};
+@mixin premiumPlan-mixin-max-1300(){
+
+};
+@mixin premiumPlan-mixin-max-lg(){
+    [page-name=premiumPlan]{
+        & .premiumPlan {
+            & .owlpremiumPlan {
+                & .owl-stage-outer {
+                    padding-top:40px;
+                    & .item {
+                        & .owlItems {
+                            & .planType {
+                                & .planTypeHeader {
+                                    & span {
+            
+                                    }
+                                }
+                                
+                                & .planOff {
+                                    
+                                    & span {
+                                        
+                                    }
+                                }
+                                & .planAmount {
+                                    & .planAmountImg {
+                                        
+                                    }
+                                }
+                                & .planAmountCount {
+                                }
+                                & .planAmounPerMonth {
+            
+                                }
+                                & .planList {
+            
+                                    & .planListItem {
+            
+                                        & .planListItems {
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover {
+                                & .planTypeHeader  {
+                                    color: $theme1 !important;
+                                }
+                            }
+                        }
+                        &:hover {
+                            transform: scale(1.02)
+                        }
+                    }
+                }
+
+                & .owl-nav {
+                    display: flex;
+                    column-gap: 10px;
+                    justify-content: center;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%,0);
+
+                    & .owl-prev{
+                        width: 31px;
+                        height: 31px;
+                        display: flex;
+                        padding: 5px !important;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 12px;
+                        border: 3px solid !important;
+                        border-color:$theme1 $theme2 $theme1 $theme2 !important;
+                        &.disabled  {
+                        border: 3px solid;
+                            border-color:lighten($theme1, 55) lighten($theme2, 55) lighten($theme1, 55) lighten($theme2, 55) !important;
+                        }
+                        
+                    }
+                    & .owl-next{
+                        width: 31px;
+                        height: 31px;
+                        display: flex;
+                        justify-content: center;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 12px;
+                        border: 3px solid !important;
+                        padding: 5px !important;
+                        border-color:$theme1 $theme2 $theme1 $theme2 !important;
+                        &.disabled  {
+                            border: 3px solid;
+                            border-color: lighten($theme1, 55) lighten($theme2, 55) lighten($theme1, 55) lighten($theme2, 55) !important;
+                        }
+                        
+                    }
+                }
+                & .owl-dots {
+                    display: none;
+                }
+            }
+        }
+    }
+};
+@mixin premiumPlan-mixin-max-md(){
+    
+};
+@mixin premiumPlan-mixin-max-sm(){
+    
+};
+@mixin premiumPlan-mixin-max-xs(){
+    [page-name=premiumPlan]{
+        & .premiumPlan {
+            & .owlpremiumPlan {
+                & .owl-stage-outer {
+                    padding-top:40px;
+                    & .item {
+                        & .owlItems {
+                            & .planType {
+                                & .planTypeHeader {
+                                    & span {
+            
+                                    }
+                                }
+                                
+                                & .planOff {
+                                    
+                                    & span {
+                                        
+                                    }
+                                }
+                                & .planAmount {
+                                    & .planAmountImg {
+                                        
+                                    }
+                                }
+                                & .planAmountCount {
+                                }
+                                & .planAmounPerMonth {
+            
+                                }
+                                & .planList {
+            
+                                    & .planListItem {
+            
+                                        & .planListItems {
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover {
+                                & .planTypeHeader  {
+                                    color: $theme1 !important;
+                                }
+                            }
+                        }
+                        &:hover {
+                            transform: scale(1.02)
+                        }
+                    }
+                }
+
+                & .owl-nav {
+                    display: none;
+                }
+                & .owl-dots {
+                    display: flex;
+                    column-gap: 10px;
+                    justify-content: center;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%,0);
+                    & .owl-dot {
+                        
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50px;
+                        border: 1px solid $theme2;
+                        position: relative;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: $theme2;
+                        &:nth-child(1) {
+                            &::after {
+                                content: "G";
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                            }
+                        }
+                        &:nth-child(2) {
+                            &::after {
+                                content: "G+";
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                            }
+                        }
+                        &:nth-child(3) {
+                            &::after {
+                                content: "D";
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                            }
+                        }
+                        &:nth-child(4) {
+                            &::after {
+                                content: "D+";
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                            }
+                        }
+                        &:nth-child(5) {
+                            &::after {
+                                content: "P";
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                            }
+                        }
+                        // &:nth-first-child(){
+                        //     display: flex;
+                        //     width: 10px;
+                        //     height: 10px;
+                        //     background-color: red
+                        // }
+                        // &:nth-second-child(){
+                        //     background-color: green
+                        // }
+                    }
+                }
+            }
+        }
+    }
+};
+
+//! ################################## End Premium Plan ###################################
 

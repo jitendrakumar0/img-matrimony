@@ -5,6 +5,9 @@
 @media (min-width: 576px) {
   @include serviceList-mixin-min-sm();
   @include blog-mixin-min-sm();
+  @include serviceDetail-mixin-min-sm();
+  @include main-mixin-min-sm();
+  @include premiumPlan-mixin-min-sm();
 
 
 }
@@ -13,6 +16,9 @@
 @media (min-width: 768px) {
   @include serviceList-mixin-min-md();
   @include blog-mixin-min-md();
+  @include serviceDetail-mixin-min-md();
+  @include main-mixin-min-md();
+  @include premiumPlan-mixin-min-md();
 
 }
 
@@ -20,6 +26,9 @@
 @media (min-width: 992px) {
   @include serviceList-mixin-min-lg();
   @include blog-mixin-min-lg();
+  @include serviceDetail-mixin-min-lg();
+  @include main-mixin-min-lg();
+  @include premiumPlan-mixin-min-lg();
 
 }
 
@@ -27,6 +36,9 @@
 @media (min-width: 1200px) {
   @include serviceList-mixin-min-xl();
   @include blog-mixin-min-xl();
+  @include serviceDetail-mixin-min-xl();
+  @include main-mixin-min-xl();
+  @include premiumPlan-mixin-min-xl();
 
 }
 
@@ -34,6 +46,9 @@
 @media (min-width: 1400px) {
   @include serviceList-mixin-min-xxl();
   @include blog-mixin-min-xxl();
+  @include serviceDetail-mixin-min-xxl();
+  @include main-mixin-min-xxl();
+  @include premiumPlan-mixin-min-xxl();
 
 }
 
@@ -41,13 +56,19 @@
 @media (max-width: 1399.98px) {
   @include serviceList-mixin-max-xl();
   @include blog-mixin-max-xl();
+  @include serviceDetail-mixin-max-xl();
+  @include main-mixin-max-xl();
+  @include premiumPlan-mixin-max-xl();
 
 }
 
 // Large devices (desktops, less than 1300px)
 @media (max-width: 1299.98px) {
   @include serviceList-mixin-max-1300();
-    @include blog-mixin-max-1300();
+  @include blog-mixin-max-1300();
+  @include serviceDetail-mixin-max-1300();
+  @include main-mixin-max-1300();
+  @include premiumPlan-mixin-max-1300();
 
 }
 
@@ -55,6 +76,9 @@
 @media (max-width: 1199.98px) {
   @include serviceList-mixin-max-lg();
   @include blog-mixin-max-lg();
+  @include serviceDetail-mixin-max-lg();
+  @include main-mixin-max-lg();
+  @include premiumPlan-mixin-max-lg();
 
 }
 
@@ -64,6 +88,9 @@
   @include testimonial-mixin-max-md();
   @include serviceList-mixin-max-md();
   @include blog-mixin-max-md();
+  @include serviceDetail-mixin-max-md();
+  @include main-mixin-max-md();
+  @include premiumPlan-mixin-max-md();
 
 }
 
@@ -72,6 +99,9 @@
   @include service-mixin-max-sm();
   @include serviceList-mixin-max-sm();
   @include blog-mixin-max-sm();
+  @include serviceDetail-mixin-max-sm();
+  @include main-mixin-max-sm();
+  @include premiumPlan-mixin-max-sm();
 
 }
 
@@ -81,6 +111,9 @@
   @include heading-mixin-max-xs();
   @include serviceList-mixin-max-xs();
   @include blog-mixin-max-xs();
+  @include serviceDetail-mixin-max-xs();
+  @include main-mixin-max-xs();
+  @include premiumPlan-mixin-max-xs();
 
 
   // @include heading-fs-12-mixin-max-xs();

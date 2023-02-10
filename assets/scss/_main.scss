@@ -148,6 +148,7 @@ a{
   text-transform: capitalize;
 }
 
+
 .detailPara {
   font-size: 16px;
   font-weight: 400;
@@ -197,3 +198,104 @@ a{
   }
   
 }
+
+.Banner {
+  padding-top: 60px;
+
+  & .premiumHeading {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  & .premiumOffer {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: rgb($theme1, 0.6);
+    width: fit-content;
+    border-radius: 50px 0px;
+    border: 2px solid $theme1;
+  }
+}
+
+/*-----------------Responsive------------------*/
+@mixin main-mixin-min-sm(){
+
+};
+@mixin main-mixin-min-md(){
+
+};
+@mixin main-mixin-min-lg(){
+
+};
+@mixin main-mixin-min-xl(){
+
+};
+@mixin main-mixin-min-xxl(){
+
+};
+@mixin main-mixin-max-xl(){
+
+};
+@mixin main-mixin-max-1300(){
+
+};
+@mixin main-mixin-max-lg(){
+
+};
+@mixin main-mixin-max-md(){
+    .detailHeading {
+      font-size: 18px;
+    }
+    .detailPara {
+      font-size: 14px;
+    }
+    .accordion {
+      & .accordion-item  {
+        & .accordion-button{
+          font-size: 16px;
+          &:hover {
+          }
+          &:not(.collapsed){
+          }
+    
+          &::after {
+          }
+    
+          &:not(.collapsed){
+            &::after {
+            }
+          } 
+        }
+    
+        & .accordion-body {
+        }
+      }
+      
+    }
+
+    .Banner {
+      padding-top: 60px;
+    
+      & .premiumHeading {
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+      & .premiumOffer {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: capitalize;
+        background-color: rgb($theme1, 0.6);
+        width: fit-content;
+        border-radius: 50px 0px;
+        border: 2px solid $theme1;
+      }
+    }
+};
+@mixin main-mixin-max-sm(){
+
+};
+@mixin main-mixin-max-xs(){
+
+};
