@@ -1,0 +1,288 @@
+.formBg {
+    background-color: $white;
+    & .FormTitle {
+        & .formTitleHeading {
+            font-size: 26px;
+            text-align: center;
+            color: $theme2;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+        & .formTitlePara {
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+    & .form {
+        & .form-control {
+            padding: .75rem 35px .75rem 1rem;
+        }
+
+        & .inputIcon {
+            right: 15px;
+            transform: translate(0,-50%);
+            width: 16px;
+            height: 16px;
+            & .inputIconImg {
+                aspect-ratio: 10/10;
+                object-fit: cover;
+            }
+        }
+
+        & .formCheck {
+            & .formCheckInput {
+                
+                &:checked {
+                    & ~  .formCheckButton {
+                        // background-color: rgb($theme1, 0.5);
+                        background-color: $theme1;
+                        color: $white;
+                    }
+                }
+            }
+            & .formCheckButton {
+                border: 2px solid $theme1;
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: capitalize;
+                padding: 5px 12px 5px 40px;
+                cursor: pointer;
+            }
+        }
+
+        & .formRadio {
+            & .formradioInput {
+                left: 35px;
+                top: 41%;
+                transform: translate(0,-50%);
+                &:checked {
+                    & ~  .formRadioButton {
+                        // background-color: rgb($theme1, 0.5);
+                        box-shadow:3px 3px 11px -5px $theme2;
+                    }
+                }
+            }
+            & .formRadioButton {
+                border: 2px solid $theme1;
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: capitalize;
+                padding: 5px 12px 5px 40px;
+                cursor: pointer;
+
+            }
+        }
+
+        & .form-check-input {
+            border-color: $theme2;
+            &:checked {
+                background-color: $theme2;
+                border-color: $theme2;
+            }
+        }
+        & .form-check-label {
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+        & .forgotPass {
+            color: $theme1;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+        & .btnstyle1 {
+            padding: 10px;
+            width: 50%;
+        }
+        & .formAccountHeading {
+            font-size: 16px;
+            font-weight: 400;
+            // text-transform: capitalize;
+            color: $black;
+        }
+        & .formSocialAccount {
+            & .formSocialtem {
+                padding-right: 0px !important;
+                &:last-child{
+                    padding-right: 15px !important;
+                }
+                & .formSocialIcon {
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid $theme2;
+                    padding: 7px;
+                    background-color: $white;
+                    transition: 0.3s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        & .formLink {
+            font-size: 16px;
+            font-weight: 400;
+            
+            & .formlinktext {
+                color: $theme2;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+/*---------------------------------modal form-----------------------------*/
+
+
+@mixin modalForm-mixin-min-sm(){
+
+};
+@mixin modalForm-mixin-min-md(){
+
+};
+@mixin modalForm-mixin-min-lg(){
+
+};
+@mixin modalForm-mixin-min-xl(){
+
+};
+@mixin modalForm-mixin-min-xxl(){
+
+};
+@mixin modalForm-mixin-max-xl(){
+
+};
+@mixin modalForm-mixin-max-1300(){
+
+};
+@mixin modalForm-mixin-max-lg(){
+
+};
+@mixin modalForm-mixin-max-md(){
+
+};
+@mixin modalForm-mixin-max-sm(){
+    .formBg { 
+        & .FormTitle {
+            & .formTitleHeading {
+                font-size: 18px;
+            }
+            & .formTitlePara {
+            }
+        }
+        & .form {
+            & .form-control {
+            }
+    
+            & .inputIcon {
+                & .inputIconImg {
+                }
+            }
+    
+            & .formRadio {
+                & .formradioInput {
+                    &:checked {
+                        & ~  .formRadioButton {
+                        }
+                    }
+                }
+                & .formRadioButton {
+                }
+            }
+    
+            & .form-check-input {
+                &:checked {
+                }
+            }
+            & .form-check-label {
+            }
+            & .forgotPass {
+            }
+            & .btnstyle1 {
+            }
+            & .formAccountHeading {
+            }
+            & .formSocialAccount {
+                & .formSocialtem {
+                    &:last-child{
+                    }
+                    & .formSocialIcon {
+    
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            & .formLink {
+                
+                & .formlinktext {
+                }
+            }
+        }
+    }
+};
+@mixin modalForm-mixin-max-xs(){
+    .formBg { 
+        & .FormTitle {
+            & .formTitleHeading {
+                font-size: 12px;
+            }
+            & .formTitlePara {
+            }
+        }
+        & .form {
+            & .form-control {
+            }
+    
+            & .inputIcon {
+                & .inputIconImg {
+                }
+            }
+    
+            & .formRadio {
+                & .formradioInput {
+                    &:checked {
+                        & ~  .formRadioButton {
+                        }
+                    }
+                }
+                & .formRadioButton {
+                }
+            }
+    
+            & .form-check-input {
+                &:checked {
+                }
+            }
+            & .form-check-label {
+            }
+            & .forgotPass {
+            }
+            & .btnstyle1 {
+            }
+            & .formAccountHeading {
+            }
+            & .formSocialAccount {
+                & .formSocialtem {
+                    &:last-child{
+                    }
+                    & .formSocialIcon {
+    
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            & .formLink {
+                
+                & .formlinktext {
+                }
+            }
+        }
+    }
+};

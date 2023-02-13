@@ -2,7 +2,7 @@
     border-radius: 50px;
     color: $theme1 !important;
     font-size: 12px;
-    height: 35px;
+    height: 40px;
     padding: 0.375rem 0.75rem;
 
     &::placeholder {
@@ -34,7 +34,7 @@
     text-transform: capitalize;
     font-weight: 600;
     color: $white;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 .aged {
     text-transform: capitalize;
@@ -60,3 +60,96 @@
     object-fit: cover;
     object-position: top center;
 }
+
+
+@mixin form-mixin-min-sm(){
+
+};
+@mixin form-mixin-min-md(){
+
+};
+@mixin form-mixin-min-lg(){
+
+};
+@mixin form-mixin-min-xl(){
+
+};
+@mixin form-mixin-min-xxl(){
+
+};
+@mixin form-mixin-max-xl(){
+
+};
+@mixin form-mixin-max-1300(){
+
+};
+@mixin form-mixin-max-lg(){
+
+};
+@mixin form-mixin-max-md(){
+    .formBg {
+        & .form {
+            & .form-check-input {
+                &:checked {
+                }
+            }
+            & .form-check-label {
+            }
+            & .forgotPass {
+            }
+            & .btnstyle1 {
+                font-size: 14px;
+            }
+        }
+    }
+};
+@mixin form-mixin-max-sm(){
+    .formBg {
+        & .form {
+            & .form-check-input {
+                &:checked {
+                }
+            }
+            & .form-check-label {
+            }
+            & .forgotPass {
+            }
+            & .btnstyle1 {
+            }
+        }
+    }
+};
+@mixin form-mixin-max-xs(){
+    .form-control,.form-select {
+    
+        &::placeholder {
+        }
+        
+    
+        &:focus {
+        }
+    
+        &:focus-visible {
+        }
+    }
+    .form-label {
+        font-size: 14px;
+    }
+    .formBg {
+        & .form {
+            & .form-check-input {
+                &:checked {
+                }
+            }
+            & .form-check-label {
+                font-size: 14px;
+            }
+            & .forgotPass {
+                font-size: 14px;
+            }
+            & .btnstyle1 {
+                width: 100%;
+            }
+        }
+    }
+};

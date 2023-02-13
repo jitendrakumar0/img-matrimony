@@ -142,6 +142,45 @@ a{
     }
 }
 
+.modalButton {
+  &.btn-close {
+    background:none;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    opacity: 1;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-image: url('../img/icons/close.svg');
+        width: 15px;
+        height: 15px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  }
+  &.previous {
+    
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translate(-50%,-50%);
+        background-image: url('../img/icons/previous.svg');
+        width: 15px;
+        height: 15px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  }
+}
+
+
+
 .detailHeading {
   font-size: 24px;
   font-weight: 700;

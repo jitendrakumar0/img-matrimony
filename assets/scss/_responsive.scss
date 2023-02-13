@@ -8,7 +8,9 @@
   @include serviceDetail-mixin-min-sm();
   @include main-mixin-min-sm();
   @include premiumPlan-mixin-min-sm();
-
+  @include heading-mixin-min-sm();
+  @include form-mixin-min-sm();
+  @include modalForm-mixin-min-sm();
 
 }
 
@@ -19,6 +21,10 @@
   @include serviceDetail-mixin-min-md();
   @include main-mixin-min-md();
   @include premiumPlan-mixin-min-md();
+  @include heading-mixin-min-md();
+  @include form-mixin-min-md();
+  @include modalForm-mixin-min-md();
+  
 
 }
 
@@ -29,6 +35,10 @@
   @include serviceDetail-mixin-min-lg();
   @include main-mixin-min-lg();
   @include premiumPlan-mixin-min-lg();
+  @include heading-mixin-min-lg();
+  @include form-mixin-min-lg();
+  @include modalForm-mixin-min-lg();
+  
 
 }
 
@@ -39,6 +49,10 @@
   @include serviceDetail-mixin-min-xl();
   @include main-mixin-min-xl();
   @include premiumPlan-mixin-min-xl();
+  @include heading-mixin-min-xl();
+  @include form-mixin-min-xl();
+  @include modalForm-mixin-min-xl();
+  
 
 }
 
@@ -49,6 +63,9 @@
   @include serviceDetail-mixin-min-xxl();
   @include main-mixin-min-xxl();
   @include premiumPlan-mixin-min-xxl();
+  @include heading-mixin-min-xxl();
+  @include form-mixin-min-xxl();
+  @include modalForm-mixin-min-xxl();
 
 }
 
@@ -59,6 +76,10 @@
   @include serviceDetail-mixin-max-xl();
   @include main-mixin-max-xl();
   @include premiumPlan-mixin-max-xl();
+  @include heading-mixin-max-xl();
+  @include form-mixin-max-xl();
+  @include modalForm-mixin-max-xl();
+  
 
 }
 
@@ -69,6 +90,9 @@
   @include serviceDetail-mixin-max-1300();
   @include main-mixin-max-1300();
   @include premiumPlan-mixin-max-1300();
+  @include heading-mixin-max-1300();
+  @include form-mixin-max-1300();
+  @include modalForm-mixin-max-1300();
 
 }
 
@@ -79,6 +103,10 @@
   @include serviceDetail-mixin-max-lg();
   @include main-mixin-max-lg();
   @include premiumPlan-mixin-max-lg();
+  @include heading-mixin-max-lg();
+  @include form-mixin-max-lg();
+  @include modalForm-mixin-max-lg();
+  
 
 }
 
@@ -91,6 +119,10 @@
   @include serviceDetail-mixin-max-md();
   @include main-mixin-max-md();
   @include premiumPlan-mixin-max-md();
+  @include heading-mixin-max-md();
+  @include form-mixin-max-md();
+  @include modalForm-mixin-max-md();
+  
 
 }
 
@@ -102,18 +134,25 @@
   @include serviceDetail-mixin-max-sm();
   @include main-mixin-max-sm();
   @include premiumPlan-mixin-max-sm();
+  @include heading-mixin-max-sm();
+  @include form-mixin-max-sm();
+  @include modalForm-mixin-max-sm();
+  
 
 }
 
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
   @include service-mixin-max-xs();
-  @include heading-mixin-max-xs();
   @include serviceList-mixin-max-xs();
   @include blog-mixin-max-xs();
   @include serviceDetail-mixin-max-xs();
   @include main-mixin-max-xs();
   @include premiumPlan-mixin-max-xs();
+  @include heading-mixin-max-xs();
+  @include form-mixin-max-xs();
+  @include modalForm-mixin-max-xs();
+  
 
 
   // @include heading-fs-12-mixin-max-xs();

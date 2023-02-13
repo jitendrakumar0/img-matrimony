@@ -2486,6 +2486,30 @@
             }
         }
     }
+
+    & .planServices {
+        & .planSErviceImg {
+            width: 50px;
+            height: 50px;
+            background-color: rgb($theme1, 0.2);
+            padding: 12px;
+            & img {
+                aspect-ratio: 10/10;
+                object-fit: cover;
+                object-position: top center;
+            }
+        }
+        & .planserviceItem {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: $theme2;
+        }
+        & .planservicePara {
+            font-size: 12px;
+            font-weight: normal;
+        }
+    }
 }
 
 /*-----------------------resposnive-----------------------*/
@@ -2681,6 +2705,7 @@
                         & .owlItems {
                             & .planType {
                                 & .planTypeHeader {
+                                    font-size: 10px;
                                     & span {
             
                                     }
@@ -2714,6 +2739,7 @@
                             }
                             &:hover {
                                 & .planTypeHeader  {
+                                    
                                     color: $theme1 !important;
                                 }
                             }
@@ -2807,4 +2833,61 @@
 };
 
 //! ################################## End Premium Plan ###################################
+
+//? ########################################## CreateProfile Page ################################
+
+[page-name=createProfile]{
+    & .createProfile {
+        padding-top: 60px;
+        & .createProfileHeading {
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        & .ProfileStepsLabel {
+            & .progressContent{
+                font-weight: 400;
+                font-size: 14px;
+                color: $gray-400;
+                &.active {
+                    &~ .progressContent {
+                        color: $theme1;
+                        &.progressBar {
+                            &::after {
+                                border-bottom: 1px dashed $theme1;
+                            }
+                        }
+                    }
+                }
+            }
+            & .progressBar {
+                & span {
+                    z-index: 1;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    border-bottom: 1px dashed;
+                    inset: 50% -50% 0px 50%;
+                    z-index: 0;
+                }
+                &:first-child::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    & .fillDetails {
+        & .createProfileTitle {
+            font-size: 18px;
+            font-weight: 600;
+            color: $theme2;
+            text-transform: capitalize;
+        }
+    }
+}
+
+//! ############################################ End CreateProfile Page ##########################
 
