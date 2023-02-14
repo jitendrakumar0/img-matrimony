@@ -193,50 +193,7 @@ a{
   font-weight: 400;
 }
 
-.accordion {
-  & .accordion-item  {
-    border: 1px solid $white;
 
-    & .accordion-button{
-      color: $black;
-      font-size: 18px;
-      text-transform: capitalize;
-      &:hover {
-        color: $theme1;
-      }
-      &:not(.collapsed){
-        background-color: transparent;
-      }
-
-      &::after {
-        background-image: url('../img/icons/downArrow.svg');
-        transform: rotate(360deg);
-
-      }
-
-      &:not(.collapsed){
-        &::after {
-          background-image: url('../img/icons/upArrow.svg');
-          transform: rotate(0deg);
-        }
-      }
-
-        // &::after {
-        //   background-image: url('../img/icons/downArrow.png');
-        // }
-        // &:not(.collapsed){
-        //   &::after {
-        //     background-image: url('../img/icons/upArrow.png');
-        //   }
-        // } 
-    }
-
-    & .accordion-body {
-      background-color: rgb($theme1, 0.06);
-    }
-  }
-  
-}
 
 .Banner {
   padding-top: 60px;

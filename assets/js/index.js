@@ -1,7 +1,11 @@
 $(function(){
     $("#header").load("header.html"); 
     $("#footer").load("footer.html"); 
+    $("#sidebar").load("sidebar.html"); 
 });
+
+
+//? ############################ Header Toggle ###########################
 
 $(window).scroll(function() {
 

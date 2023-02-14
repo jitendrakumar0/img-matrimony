@@ -1,0 +1,131 @@
+.img {
+    // aspect-ratio: 10/10;
+    object-fit: cover;
+    object-position: top center;
+}
+
+//! ############################ Comman Main Css ##############################
+
+
+//? ############################ Sidebar Page ##############################
+[page-name=sidebar]{
+    width: 250px;
+    height: 100vh;
+    // background-color: $theme2;
+    
+    & .adminLogo {
+        width: 50px;
+        height: 50px;
+        height: 100px;
+    }
+
+    & .sidebaarList {
+        height: calc(100vh - 100px);
+
+        & .sidebarListItem {
+            padding: 0;
+            margin: 0px -12px 0px -15px;
+            --bs-accordion-border-width:none !important;
+
+            &.accordion {
+                // background-color: $gray-200;
+            }
+
+            & .sidebarListNav {
+                background-color: transparent;
+                margin-bottom: 15px;
+
+                & .sidebarListItems  {
+                    list-style: none;
+                    padding: 6px 15px;
+                    margin: 0px 12px 0px 0px;
+                    transition: 0.3s ease;
+
+                            
+                    & .sidebarNavLink {
+                        & .sidelist {
+                            background-color: transparent;
+                            column-gap: 10px;
+    
+                            & .sidebarNavIcon {
+                                width: 30px;
+                                height: 30px;   
+                                padding: 8px;
+                                border-radius: 3px;
+                                align-items: center;
+                                justify-content: center;
+    
+                                & .img {
+                                    // filter: grayscale(1);
+                                }
+    
+                            }
+    
+                            & .sidebarNavText {
+                                font-size: 16px;
+                                font-weight: 600;
+                                text-transform: capitalize;
+                                color: $gray-700;
+                                border-radius: 0px 30px 30px 0px;
+                            }
+                        }
+                        
+                    }
+    
+                    &.active {
+                        background-color: $theme1;
+                        border-radius: 0px 30px 30px 0px;
+    
+                        & .sidebarNavIcon {
+                            background-color: lighten($theme2, 20);
+    
+                            & .img {
+                                filter: inherit;
+                            }
+                        }
+    
+                        & .sidebarNavText {
+                            color: $white !important;
+                        }
+                    }
+    
+                }
+
+                & .accordion-collapse {
+
+                    & .accordion-body {
+                        
+                        & .sidebarListItem  {
+                            margin: 0px -20px 0px 0px;
+                            & .sidebarListItems {
+                                // margin: 0px 0px 0px 0px;
+                                & .sidebarNavLink {
+
+                                    & .sidelist  {
+
+                                        & .sidebarNavText {
+                                        }
+                                    }
+                                }
+
+                                &.active {
+                                    background-color: $white !important;
+                                    border-radius: 30px;
+                                    & .sidelist  {
+
+                                        & .sidebarNavText {
+                                            color: $theme2 !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+//! ############################ End Sidebar Page ##############################
