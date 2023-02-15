@@ -936,6 +936,80 @@
     }
 }
 
+/*------------------------resposnive---------------------*/
+@mixin workprocess-mixin-min-sm(){
+
+};
+@mixin workprocess-mixin-min-md(){
+
+};
+@mixin workprocess-mixin-min-lg(){
+
+};
+@mixin workprocess-mixin-min-xl(){
+
+};
+@mixin workprocess-mixin-min-xxl(){
+
+};
+@mixin workprocess-mixin-max-xl(){
+
+};
+@mixin workprocess-mixin-max-1300(){
+
+};
+@mixin workprocess-mixin-max-lg(){
+
+};
+@mixin workprocess-mixin-max-md(){
+    [page-name=howItWork]{
+    .bgHowItWork  {
+        
+        & .HowItWork {
+            & .HowItWorkHeading {
+                & .subHeading {
+        
+                }
+                & .maiHeading {
+                }
+                & .HowItWorkPara {
+                }
+            }
+            & .workingprocess {
+
+                & .workingprocessImg {
+                }
+            }
+        }
+    }
+
+    & .workProcess {
+
+        & .workProcesskImg {
+        }
+
+        & .workProcessLevel {
+        }
+
+        & .workProcessHeading {
+        }
+
+        & .workProcessText {
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}
+};
+@mixin workprocess-mixin-max-sm(){
+
+};
+@mixin workprocess-mixin-max-xs(){
+
+};
+
 //! ################################## End How it Work ###################################
 
 
@@ -2922,4 +2996,280 @@
 }
 
 //! ############################################ End CreateProfile Page ##########################
+
+
+//? ############################################ privacy policy Page ##########################
+
+[page-name=privacyPolicy]{
+    & .anchorlink {
+        color: #680303;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    & .detailList {
+        & .detailListItem {
+            & .detailListItems {
+                margin: 10px 0px;
+                font-size: 16px;
+                color: $gray-600;
+                &:last-child {
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}
+
+//! ############################################ End privacy policy Page ##########################
+
+//? ############################################ CreateProfile Page ##########################
+
+[page-name=faq]{
+    & .accordion-item  {
+        border: 1px solid $white;
+    
+        & .accordion-button{
+        color: $black;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: capitalize;
+        &:hover {
+            color: $theme1;
+        }
+        &:not(.collapsed){
+            background-color: transparent;
+        }
+    
+        &::after {
+            background-image: url('../img/icons/upArrow.svg');
+            width: 15px;
+            height: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+            content: "";
+            position: absolute;
+            right: 15px;
+    
+        }
+        }
+    
+        & .accordion-body {
+        background-color: rgb($theme1, 0.06);
+        }
+    }
+}
+
+//! ############################################ End privacy policy Page ##########################
+
+
+//? ############################################ Contact us Page ##########################
+
+[page-name=contact]{
+    & .contactContent {
+        & .sectionHeading {
+            & .mainHeading {
+
+            }
+        }
+        & .subheading {
+            font-size: 14px;
+                color: $gray-600;
+                font-weight: normal;
+        }
+
+        & .aboutOffice {
+            & .detailHeading {
+
+            }
+
+            & .aboutOfficeImg {
+                height: 300px;
+
+                & .Img {
+                    object-fit: cover;
+                    // object-position: top center;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            
+            & .aboutOfficePara {
+                font-size: 14px;
+                color: $gray-600;
+                font-weight: normal;
+            }
+        }
+
+    }
+    
+    & .contactDetails {
+
+        & .contactDetailsBg {
+            padding: 22px;
+            border-radius: 8px;
+            background-color: $gray-100;
+
+            & .contactDetailsIcon {
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%,0);
+                margin-top: -38px !important;
+                z-index: 2;
+                background: white;
+            }
+
+            & .contactDetailsHeading {
+                color: $theme2;
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: capitalize;
+                text-align: center;
+            }
+            & .contactDetailsPara {
+                font-size: 14px;
+            color: $gray-600;
+            font-weight: normal;
+            }
+        }
+    }
+}
+
+/*--------------------------responsive-----------------------*/
+@mixin contact-mixin-min-sm(){
+
+};
+@mixin contact-mixin-min-md(){
+
+};
+@mixin contact-mixin-min-lg(){
+
+};
+@mixin contact-mixin-min-xl(){
+
+};
+@mixin contact-mixin-min-xxl(){
+
+};
+@mixin contact-mixin-max-xl(){
+
+};
+@mixin contact-mixin-max-1300(){
+
+};
+@mixin contact-mixin-max-lg(){
+
+};
+@mixin contact-mixin-max-md(){
+    [page-name=contact]{
+        & .contactContent {
+            & .sectionHeading {
+                & .mainHeading {
+                    font-size: 18px;
+                }
+            }
+            & .subheading {
+                font-size: 12px
+            }
+    
+            & .aboutOffice {
+                & .detailHeading {
+                    font-size: 14px;
+                }
+    
+                & .aboutOfficeImg {
+    
+                    & .Img {
+                    }
+                }
+                
+                & .aboutOfficePara {
+                    font-size: 12px
+                }
+            }
+    
+        }
+        
+        & .contactDetails {
+    
+            & .contactDetailsBg {
+    
+                & .contactDetailsIcon {
+                }
+    
+                & .contactDetailsHeading {
+                }
+                & .contactDetailsPara {
+                }
+            }
+        }
+    }
+};
+@mixin contact-mixin-max-sm(){
+    [page-name=contact]{
+        & .contactContent {
+            & .sectionHeading {
+                & .mainHeading {
+                    font-size: 18px;
+                }
+            }
+            & .subheading {
+                font-size: 12px
+            }
+    
+            & .aboutOffice {
+                & .detailHeading {
+                    font-size: 14px;
+                }
+    
+                & .aboutOfficeImg {
+    
+                    & .Img {
+                    }
+                }
+                
+                & .aboutOfficePara {
+                    font-size: 12px
+                }
+            }
+    
+        }
+        
+        & .contactDetails {
+    
+            & .contactDetailsBg {
+    
+                & .contactDetailsIcon {
+                    position: inherit;
+                    margin-top: inherit !important;
+                    transform: inherit;
+                }
+    
+                & .contactDetailsHeading {
+                    text-align: left;
+                    font-size: 14px
+                }
+                & .contactDetailsPara {
+                    font-size: 12px
+                }
+            }
+        }
+    }
+};
+@mixin contact-mixin-max-xs(){
+
+};
+
+//! ############################################ End Contact us Page ##########################
+
+
 

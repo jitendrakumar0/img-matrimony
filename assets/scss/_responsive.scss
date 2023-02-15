@@ -11,6 +11,10 @@
   @include heading-mixin-min-sm();
   @include form-mixin-min-sm();
   @include modalForm-mixin-min-sm();
+  @include sidebar-mixin-min-sm();
+  @include mainContent-mixin-min-sm();
+  @include contact-mixin-min-sm();
+  @include workprocess-mixin-min-sm();
 
 }
 
@@ -24,6 +28,10 @@
   @include heading-mixin-min-md();
   @include form-mixin-min-md();
   @include modalForm-mixin-min-md();
+  @include sidebar-mixin-min-md();
+  @include mainContent-mixin-min-md();
+  @include contact-mixin-min-md();
+  @include workprocess-mixin-min-md();
   
 
 }
@@ -38,6 +46,10 @@
   @include heading-mixin-min-lg();
   @include form-mixin-min-lg();
   @include modalForm-mixin-min-lg();
+  @include sidebar-mixin-min-lg();
+  @include mainContent-mixin-min-lg();
+  @include contact-mixin-min-lg();
+  @include workprocess-mixin-min-lg();
   
 
 }
@@ -52,6 +64,10 @@
   @include heading-mixin-min-xl();
   @include form-mixin-min-xl();
   @include modalForm-mixin-min-xl();
+  @include sidebar-mixin-min-xl();
+  @include mainContent-mixin-min-xl();
+  @include contact-mixin-min-xl();
+  @include workprocess-mixin-min-xl();
   
 
 }
@@ -66,6 +82,10 @@
   @include heading-mixin-min-xxl();
   @include form-mixin-min-xxl();
   @include modalForm-mixin-min-xxl();
+  @include sidebar-mixin-min-xxl();
+  @include mainContent-mixin-min-xxl();
+  @include contact-mixin-min-xxl();
+  @include workprocess-mixin-min-xxl();
 
 }
 
@@ -79,6 +99,10 @@
   @include heading-mixin-max-xl();
   @include form-mixin-max-xl();
   @include modalForm-mixin-max-xl();
+  @include sidebar-mixin-max-xl();
+  @include mainContent-mixin-max-xl();
+  @include contact-mixin-max-xl();
+  @include workprocess-mixin-max-xl();
   
 
 }
@@ -93,6 +117,10 @@
   @include heading-mixin-max-1300();
   @include form-mixin-max-1300();
   @include modalForm-mixin-max-1300();
+  @include sidebar-mixin-max-1300();
+  @include mainContent-mixin-max-1300();
+  @include contact-mixin-max-1300();
+  @include workprocess-mixin-max-1300();
 
 }
 
@@ -106,6 +134,10 @@
   @include heading-mixin-max-lg();
   @include form-mixin-max-lg();
   @include modalForm-mixin-max-lg();
+  @include sidebar-mixin-max-lg();
+  @include mainContent-mixin-max-lg();
+  @include contact-mixin-max-lg();
+  @include workprocess-mixin-max-lg();
   
 
 }
@@ -122,6 +154,10 @@
   @include heading-mixin-max-md();
   @include form-mixin-max-md();
   @include modalForm-mixin-max-md();
+  @include sidebar-mixin-max-md();
+  @include mainContent-mixin-max-md();
+  @include contact-mixin-max-md();
+  @include workprocess-mixin-max-md();
   
 
 }
@@ -137,6 +173,10 @@
   @include heading-mixin-max-sm();
   @include form-mixin-max-sm();
   @include modalForm-mixin-max-sm();
+  @include sidebar-mixin-max-sm();
+  @include mainContent-mixin-max-sm();
+  @include contact-mixin-max-sm();
+  @include workprocess-mixin-max-sm();
   
 
 }
@@ -152,6 +192,10 @@
   @include heading-mixin-max-xs();
   @include form-mixin-max-xs();
   @include modalForm-mixin-max-xs();
+  @include sidebar-mixin-max-xs();
+  @include mainContent-mixin-max-xs();
+  @include contact-mixin-max-xs();
+  @include workprocess-mixin-max-xs();
   
 
 
