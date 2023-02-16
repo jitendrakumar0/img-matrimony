@@ -102,6 +102,10 @@
             }
         }
     }
+
+    .form-label {
+        font-size: 14px;
+    }
 };
 @mixin form-mixin-max-sm(){
     .formBg {
@@ -121,7 +125,7 @@
 };
 @mixin form-mixin-max-xs(){
     .form-control,.form-select {
-    
+        height: 38px;
         &::placeholder {
         }
         
@@ -131,6 +135,11 @@
     
         &:focus-visible {
         }
+    }
+
+    .searchIcon {
+        width: 20px;
+        height: 20px;
     }
     .form-label {
         font-size: 14px;

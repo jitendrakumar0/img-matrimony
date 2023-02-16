@@ -185,6 +185,12 @@ a{
   font-size: 24px;
   font-weight: 700;
   text-transform: capitalize;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 }
 
 
@@ -290,8 +296,45 @@ a{
     }
 };
 @mixin main-mixin-max-sm(){
-
+  .Banner {
+    padding-top: 60px;
+  
+    & .premiumHeading {
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    & .premiumOffer {
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: capitalize;
+      background-color: rgb($theme1, 0.6);
+      width: fit-content;
+      border-radius: 50px 0px;
+      border: 2px solid $theme1;
+    }
+  }
 };
 @mixin main-mixin-max-xs(){
-
+  .Banner {
+    padding-top: 60px;
+  
+    & .premiumHeading {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    & .premiumOffer {
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: capitalize;
+      background-color: rgb($theme1, 0.6);
+      width: fit-content;
+      border-radius: 50px 0px;
+      border: 2px solid $theme1;
+    }
+  }
+  .detailPara {
+    font-size: 12px;
+  }
 };

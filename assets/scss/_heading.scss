@@ -60,15 +60,24 @@
     }
 };
 @mixin heading-mixin-max-sm(){
-
+    .sectionHeading {
+        & .mainHeading {
+            font-size: 28px;
+        }
+        & .subheading {
+            font-size: 14px;
+        }
+    
+        
+    }
 };
 @mixin heading-mixin-max-xs(){
     .sectionHeading {
         & .mainHeading {
-            font-size: 24px;
+            font-size: 18px;
         }
         & .subheading {
-            font-size: 14px;
+            font-size: 12px;
         }
     
         
