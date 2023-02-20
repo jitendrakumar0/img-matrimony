@@ -16,6 +16,8 @@
   @include mainContent-mixin-min-sm();
   @include contact-mixin-min-sm();
   @include workprocess-mixin-min-sm();
+  @include blogdetailfluid-mixin-min-sm();
+  @include footer-mixin-min-sm();
 
 }
 
@@ -34,6 +36,8 @@
   @include mainContent-mixin-min-md();
   @include contact-mixin-min-md();
   @include workprocess-mixin-min-md();
+  @include blogdetailfluid-mixin-min-md();
+  @include footer-mixin-min-md();
   
 
 }
@@ -53,6 +57,9 @@
   @include mainContent-mixin-min-lg();
   @include contact-mixin-min-lg();
   @include workprocess-mixin-min-lg();
+  @include blogdetailfluid-mixin-min-lg();
+  @include footer-mixin-min-lg();
+
   
 
 }
@@ -72,6 +79,8 @@
   @include mainContent-mixin-min-xl();
   @include contact-mixin-min-xl();
   @include workprocess-mixin-min-xl();
+  @include blogdetailfluid-mixin-min-xl();
+  @include footer-mixin-min-xl();
   
 
 }
@@ -91,6 +100,8 @@
   @include mainContent-mixin-min-xxl();
   @include contact-mixin-min-xxl();
   @include workprocess-mixin-min-xxl();
+  @include blogdetailfluid-mixin-min-xxl();
+  @include footer-mixin-min-xxl();
 
 }
 
@@ -109,6 +120,8 @@
   @include mainContent-mixin-max-xl();
   @include contact-mixin-max-xl();
   @include workprocess-mixin-max-xl();
+  @include blogdetailfluid-mixin-max-xl();
+  @include footer-mixin-max-xl();
   
 
 }
@@ -128,6 +141,8 @@
   @include mainContent-mixin-max-1300();
   @include contact-mixin-max-1300();
   @include workprocess-mixin-max-1300();
+  @include blogdetailfluid-mixin-max-1300();
+  @include footer-mixin-max-1300();
 
 }
 
@@ -146,6 +161,8 @@
   @include mainContent-mixin-max-lg();
   @include contact-mixin-max-lg();
   @include workprocess-mixin-max-lg();
+  @include blogdetailfluid-mixin-max-lg();
+  @include footer-mixin-max-lg();
   
 
 }
@@ -167,6 +184,8 @@
   @include mainContent-mixin-max-md();
   @include contact-mixin-max-md();
   @include workprocess-mixin-max-md();
+  @include blogdetailfluid-mixin-max-md();
+  @include footer-mixin-max-md();
   
 
 }
@@ -187,6 +206,8 @@
   @include mainContent-mixin-max-sm();
   @include contact-mixin-max-sm();
   @include workprocess-mixin-max-sm();
+  @include blogdetailfluid-mixin-max-sm();
+  @include footer-mixin-max-sm();
   
 
 }
@@ -207,6 +228,8 @@
   @include mainContent-mixin-max-xs();
   @include contact-mixin-max-xs();
   @include workprocess-mixin-max-xs();
+  @include blogdetailfluid-mixin-max-xs();
+  @include footer-mixin-max-xs();
   
 
 

@@ -2,7 +2,8 @@
     background-color: rgb($theme2, 0.5);
     &.contentFixed {
         background-color: $theme2;
-        border-bottom: 0.5px solid $gray-300;
+        // border-bottom: 0.5px solid $gray-300;
+        box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.15) !important;
     }
     z-index: 99;
     & .header {

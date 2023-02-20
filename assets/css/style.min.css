@@ -13,6 +13,7 @@
 
 body {
   letter-spacing: 0.5px;
+  user-select: none;
 }
 
 a {
@@ -399,7 +400,7 @@ a {
 }
 .headerFixed.contentFixed {
   background-color: #680303;
-  border-bottom: 0.5px solid #dee2e6;
+  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.15) !important;
 }
 .headerFixed .header .navbar {
   height: 52px;
@@ -506,8 +507,9 @@ a {
   font-size: 12px;
   font-weight: 400;
 }
+/*------------------responsive-----------------------*/
 [page-name=homePage] .banner {
-  height: 550px;
+  height: 550px !important;
 }
 [page-name=homePage] .banner .bannerImg {
   background-image: url("../img/bg/banner.jpg");
@@ -910,9 +912,6 @@ a {
   transform: scale(0.85);
 }
 
-[page-name=blogDetails] .blogdetailfluid {
-  background-color: #f8f9fa;
-}
 [page-name=blogDetails] .blogdetailfluid .sideheading {
   font-size: 20px;
   font-weight: 700;
@@ -921,7 +920,6 @@ a {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  margin-top: 15px;
 }
 [page-name=blogDetails] .blogdetailfluid .detailtopimg img {
   width: 100%;
@@ -929,15 +927,23 @@ a {
   object-fit: cover;
   border-radius: 5px;
 }
-[page-name=blogDetails] .blogdetailfluid .daateautocontainerr .dateauto {
-  background-color: #000;
+[page-name=blogDetails] .blogdetailfluid .commentDate {
+  margin: -70px 10px 0px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+}
+[page-name=blogDetails] .blogdetailfluid .commentDate .daateautocontainerr .dateauto {
+  background-color: #680303;
   color: #fff;
   font-size: 15px;
   font-weight: 700;
-  padding: 18px 20px;
+  padding: 20px;
+  width: 60px;
+  height: 60px;
   border-radius: 5px;
 }
-[page-name=blogDetails] .blogdetailfluid .daateautocontainerr .dateauto span {
+[page-name=blogDetails] .blogdetailfluid .commentDate .daateautocontainerr .dateauto span {
   font-size: 12px;
   font-weight: 500;
   display: block;
@@ -1067,6 +1073,7 @@ a {
   font-size: 15px;
   font-weight: 500;
   color: #6c757d;
+  text-align: justify;
 }
 [page-name=blogDetails] .blogdetailfluid blockquote {
   border-left: 2px solid;
@@ -1112,10 +1119,9 @@ a {
   white-space: normal;
 }
 [page-name=blogDetails] .blogdetailfluid .rowright {
-  margin-left: 80px;
+  margin-left: 50px;
   background-color: #e9ecef;
   border-radius: 0px 25px 0px 25px;
-  width: 80%;
 }
 [page-name=blogDetails] .blogdetailfluid .reply {
   font-size: 14px;
@@ -1126,32 +1132,44 @@ a {
   font-size: 20px;
   font-weight: 700;
 }
-[page-name=blogDetails] .blogdetailfluid .form-control {
-  box-shadow: none !important;
-  border-color: #e9ecef !important;
+[page-name=blogDetails] .storysectionItem {
+  box-sizing: border-box;
 }
-[page-name=blogDetails] .blogdetailfluid .txtarea {
-  border-color: #e9ecef !important;
-  color: #6c757d;
+[page-name=blogDetails] .storysectionItem .storySectionImg:hover .storyDate {
+  transform: rotate(0deg);
+  top: 12px;
+  left: 12px;
+}
+[page-name=blogDetails] .storysectionItem .storyDate {
+  position: absolute;
+  top: 28px;
+  left: 19px;
+  background: #680303;
+  border-radius: 6px;
+  padding: 4px 10px;
   font-size: 14px;
-  font-weight: 500;
-  height: 200px !important;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  padding-left: 10px;
-}
-[page-name=blogDetails] .blogdetailfluid .submitbtn {
-  border: none;
-  background: linear-gradient(to right, #a70000, #680303);
+  font-weight: 600;
   color: #fff;
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: 5px;
-  padding: 12px 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: 0.9s all;
+  transform: rotate(340deg);
+}
+[page-name=blogDetails] .storysectionItem .storyPara {
+  font-size: 14px;
+}
+[page-name=blogDetails] .storysectionItem .storySocialiConnection {
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: relative;
+  transition: all 0.5s;
+}
+[page-name=blogDetails] .storysectionItem .storySocialiConnection img {
+  object-fit: cover;
+  aspect-ratio: 10/10;
+  position: absolute;
+}
+[page-name=blogDetails] .storysectionItem .storySocialiConnection:hover {
+  transform: scale(0.85);
 }
 
 [page-name=howItWork] .bgHowItWork {
@@ -1304,7 +1322,7 @@ a {
   cursor: pointer;
 }
 [page-name=serviceList] .serviceListBg .serviceFilterLeft .serviceFilter .filterList input.form-control:checked ~ label {
-  border: 1px solid #680303 !important;
+  border: 2px solid #680303 !important;
   font-weight: 600;
   box-shadow: 1px 1px 9px 0px rgba(104, 3, 3, 0.4);
 }
@@ -1958,6 +1976,15 @@ a {
 }
 
 /*--------------------------responsive-----------------------*/
+[page-name=myGallery] .myGallery {
+  padding-top: 60px;
+}
+[page-name=myGallery] .myGallery .myGalleryHeading {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
 .form-control, .form-select {
   border-radius: 50px;
   color: #a70000 !important;
@@ -2683,6 +2710,11 @@ a {
   [page-name=howItWork] .workProcess::after {
     display: none;
   }
+  [page-name=blogDetails] .blogdetailfluid .rowright {
+    width: 100%;
+    margin-left: 0 !important;
+    background-color: none !important;
+  }
 }
 @media (max-width: 767.98px) {
   [page-name=homePage] .banner {
@@ -2835,6 +2867,24 @@ a {
   }
   [page-name=howItWork] .workProcess::after {
     display: none;
+  }
+  [page-name=blogDetails] .storysectionItem .storyClientName {
+    font-size: 14px;
+  }
+  [page-name=blogDetails] .storysectionItem .storyDate {
+    font-size: 12px;
+  }
+  [page-name=blogDetails] .storysectionItem .storyPara {
+    font-size: 12px;
+  }
+  .footer .footerContactHeading {
+    font-size: 16px;
+  }
+  .footer .footerContactItem .footerContactLink {
+    font-size: 12px;
+  }
+  .footer .footerMenu .footerMenuItem {
+    font-size: 12px;
   }
 }
 @media (max-width: 575.98px) {
@@ -3098,5 +3148,29 @@ a {
   }
   [page-name=howItWork] .workProcess::after {
     display: none;
+  }
+  [page-name=blogDetails] .blogdetailfluid .commentDate {
+    margin: inherit;
+  }
+  [page-name=blogDetails] .blogdetailfluid .rowright {
+    margin-left: unset !important;
+  }
+  [page-name=blogDetails] .storysectionItem .storyClientName {
+    font-size: 14px;
+  }
+  [page-name=blogDetails] .storysectionItem .storyDate {
+    font-size: 10px;
+  }
+  [page-name=blogDetails] .storysectionItem .storyPara {
+    font-size: 12px;
+  }
+  .footer .footerContactHeading {
+    font-size: 16px;
+  }
+  .footer .footerContactItem .footerContactLink {
+    font-size: 12px;
+  }
+  .footer .footerMenu .footerMenuItem {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=style.min.css.map */

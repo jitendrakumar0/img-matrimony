@@ -32,23 +32,24 @@ if ($("[page-name=serviceDetail]").length) {
         let a = e.currentTarget;
 
     })
-
-    // serviceListImg.forEach(btn => {
-    //     btn.addEventListener('click', (e) => {
-    //         var a = e.currentTarget.getAttribute('serviceList-Img');
-    //         var b = document.getElementById(a);
-    //         var c = b.parentElement;
-    //         c.forEach(img => {
-    //             img.classList.remove('active');
-    //         })
-    //         c.classList.add('active');
-    //         console.log(b);
-    //     })
-    // });
-
-    // serviceGalleryList.addEventListener('click', e => {
-        // var a = e.currentTarget.
-    // });
 }
 
-//Home page 
+
+//? ###########################  MyGallery New Page Start  ###########################
+
+if ($("[page-name=myGallery]").length) {
+
+    // Justify Gallery
+    $("#myGalleryAlbum").justifiedGallery({
+        rowHeight: 170,
+        lastRow: 'nojustify',
+        margins: 16,
+        captions: false
+    });
+
+
+    // glightbox
+
+    var lightbox = GLightbox();
+
+}
